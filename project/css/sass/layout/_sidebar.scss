@@ -1,0 +1,85 @@
+.sidebar{
+    width: 250px;
+    background-color: #fff;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 1rem;
+    display:flex;
+    flex-direction: column;
+    .sidebar_header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #ddd;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        .name{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .email{
+            font-size: .8rem;
+            opacity: .8;
+        }
+        .noti_icon{
+            align-self: flex-start;
+            font-size: .8rem;
+        }
+    }
+    .sidebar_body{
+        justify-self: start;
+        padding-top: 1.5rem;
+        li {
+            display: flex;
+            align-items: center;
+            padding-inline: 0.5rem;
+            width: 90%;
+            border-radius: 6px;
+            a{
+                margin-left: .9rem;
+                color: #414446;
+                font-size: .9rem;
+                font-weight: 500;
+                display: block;
+                padding-block: .8rem;
+            }
+            &:hover{
+                font-weight: bold;
+                background-color: rgba(64, 104, 126, 0.12);
+                box-shadow: 0 0 0 .5px;
+            }
+            
+        }
+        
+        
+    }
+    .sidebar_footer{
+        margin-top: auto;
+        margin-bottom: 2rem;
+        button{
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            a{
+                margin-left: .9rem;
+                color: #414446;
+                font-size: .9rem;
+                font-weight: 500;
+                display: block;
+                padding-block: .8rem;
+            }
+            &:hover{
+                font-weight: bold;
+                background-color: rgba(64, 104, 126, 0.12);
+                box-shadow: 0 0 0 .5px;
+            }
+        }
+    }
+} 
