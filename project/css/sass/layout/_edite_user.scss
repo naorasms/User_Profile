@@ -1,0 +1,65 @@
+.edit_user{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+    .edite_header{
+        grid-column: span 12;
+        display: flex;
+        align-items: center;
+        padding-block: 1rem;
+        .edite_icon{
+            font-size: 1.5rem;
+        }
+        .user_name{
+            width: 12rem;
+            margin-left: 3rem;
+            h2{
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+
+    }
+    .form_body{
+        padding-block: 1.5rem;
+        grid-column: span 9;
+        form{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+        
+            gap: 0 5rem;
+            .left{
+                grid-column: 1 / 2;
+            }
+            .form_field{
+                label{
+                    margin-bottom: .3rem;
+                    display: block;
+                    color: #40687E;
+                    font-weight: 600;
+                }
+                padding-block: .5rem;
+                input[type="text"]{
+                    padding-bottom: .5rem;
+                    width: 300px;
+                }
+                input[type="email"]{
+                    padding-bottom: .5rem;
+                    width: 300px;
+                }
+                input[type="tel"]{ 
+                    padding-bottom: .5rem;
+                    width: 300px;
+                }
+                input[type="address"]{
+                    padding-bottom: .5rem;
+                    width: 300px;
+                }
+            }
+            input[type="submit"]{
+                margin: 0 auto;
+            }
+        }
+     
+    }
+}

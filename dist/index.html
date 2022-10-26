@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap">
     <link rel="stylesheet" href="css/main.css">
     <title>Home</title>
   </head>
@@ -12,29 +13,68 @@
       <div class="sidebar"> 
         <div class="sidebar_header"><img src="img/avatar.png" alt="" srcset="">
           <div class="profile_info">
-            <p class="name">naoras</p>
-            <p class="email">naorasms@gmailcom</p>
+            <p class="name">Rana AYDIN</p>
+            <p class="email">ranaalmasaleh@gmail.com</p>
           </div><i class="noti_icon fa-solid fa-bell"></i>
         </div>
         <div class="sidebar_body"> 
           <nav> 
             <ul> 
-              <li><i class="fa-solid fa-user-pen"></i><a href="#">My Information   </a></li>
-              <li>
-                 <i class="fa-solid fa-truck-fast"></i><a href="#">My Orders</a></li>
-              <li><i class="fa-regular fa-heart"></i><a href="#">My Favorites</a></li>
-              <li><i class="fa-regular fa-envelope"></i><a href="#">My Messages</a></li>
-              <li><i class="fa-solid fa-location-dot"></i><a href="#">My Address</a></li>
-              <li><i class="fa-regular fa-circle-question"></i><a href="#">Support</a></li>
+              <li><a href="#"><i class="menu_icon fa-solid fa-user-pen"> </i>My Information  </a></li>
+              <li>   <a href="#"><i class="menu_icon fa-solid fa-truck-fast"></i>My Orders</a></li>
+              <li> <a href="#"><i class="menu_icon fa-regular fa-heart"></i>My Favorites</a></li>
+              <li><a href="#"><i class="menu_icon fa-regular fa-envelope"> </i>My Messages</a></li>
+              <li><a href="#"><i class="menu_icon fa-solid fa-location-dot"> </i>My Address</a></li>
+              <li><a href="#"><i class="menu_icon fa-regular fa-circle-question"></i>Support</a></li>
             </ul>
           </nav>
         </div>
         <div class="sidebar_footer">           
-          <button>
-             <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Log Out</a></button>
+          <button><a href="#"><i class="menu_icon fa-solid fa-arrow-right-from-bracket"> </i>Log Out</a></button>
         </div>
       </div>
-      <div class="content">content area</div>
+      <div class="content">
+        <div class="edit_user">
+          <div class="edite_header"><img src="img/avatar.png" alt="avatar">
+            <div class="user_name">
+              <h2>Rana AYDIN</h2><i class="edite_icon fa-solid fa-user-pen"> </i>
+            </div>
+          </div>
+          <div class="form_body">
+            <form action="#"> 
+              <div class="form_field">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname">
+              </div>
+              <div class="form_field">
+                <label for="lname">last Name</label>
+                <input type="text" name="" id="lname">
+              </div>
+              <div class="form_field">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email">
+              </div>
+              <div class="form_field">
+                <label for="address">Primery Address</label>
+                <input type="address" name="" id="address">
+              </div>
+              <div class="form_field left">
+                <label for="phone">Phone</label>
+                <input type="tel" name="" id="phone">
+              </div>
+              <div class="form_field left">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="" id="dob">
+              </div>
+              <div class="form_field left">
+                <label for="">Gender</label>
+                <input type="radio" name="m" id="m">Male
+                <input type="radio" name="f" id="f">Female
+              </div><input type="submit" value="Save Changes">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/all.min.js"> </script>
     <script src="js/main.js"> </script>
