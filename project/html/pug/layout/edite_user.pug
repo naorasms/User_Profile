@@ -25,9 +25,15 @@
                 label(for="dob") Date of Birth
                 input(type="date", name="" id="dob")
             .form_field.left
-                label(for="") Gender
-                input(type="radio", name="m" id="m")
-                |Male
-                input(type="radio", name="f" id="f")
-                |Female
-            <input type="submit" value="Save Changes">
+                label(for="Gender") Gender
+                .gender_detils
+                    span
+                        label(for="m") Male
+                        input(type="radio", name="gender" id="m")
+                        
+                    span
+                        label(for="f") Female
+                        input(type="radio", name="gender" id="f")
+                        
+            .form_field
+                <input type="submit" value="Save Changes">

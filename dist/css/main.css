@@ -6498,8 +6498,9 @@ body {
   height: 50px;
 }
 .sidebar .sidebar_header .name {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: -1px;
 }
 .sidebar .sidebar_header .email {
   font-size: 0.8rem;
@@ -6596,6 +6597,7 @@ body {
 }
 .edit_user .edite_header .edite_icon {
   font-size: 1.5rem;
+  color: #40687E;
 }
 .edit_user .edite_header .user_name {
   width: 12rem;
@@ -6604,6 +6606,8 @@ body {
 .edit_user .edite_header .user_name h2 {
   display: inline-block;
   margin-right: 1rem;
+  color: #2D2F31;
+  font-weight: 600;
 }
 .edit_user .form_body {
   padding-block: 1.5rem;
@@ -6625,24 +6629,47 @@ body {
   display: block;
   color: #40687E;
   font-weight: 600;
+  font-size: 0.9rem;
 }
-.edit_user .form_body form .form_field input[type=text] {
+.edit_user .form_body form .form_field label[for=Gender],
+.edit_user .form_body form .form_field label[for=f],
+.edit_user .form_body form .form_field label[for=m] {
+  display: unset;
+}
+.edit_user .form_body form .form_field input:not([type=radio]) {
   padding-bottom: 0.5rem;
-  width: 300px;
+  width: 350px;
+  border: 1px solid #D6D6D6;
+  height: 2.3rem;
+  padding: 0.5rem;
 }
-.edit_user .form_body form .form_field input[type=email] {
+.edit_user .form_body form .form_field input:not([type=radio]):focus {
+  outline: none;
+}
+.edit_user .form_body form .form_field input[type=radio] {
   padding-bottom: 0.5rem;
-  width: 300px;
+  margin-right: 1rem;
 }
-.edit_user .form_body form .form_field input[type=tel] {
-  padding-bottom: 0.5rem;
-  width: 300px;
+.edit_user .form_body form .form_field .gender_detils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.edit_user .form_body form .form_field input[type=address] {
-  padding-bottom: 0.5rem;
-  width: 300px;
+.edit_user .form_body form .form_field:last-child {
+  grid-column: span 2;
+  justify-self: center;
 }
-.edit_user .form_body form input[type=submit] {
-  margin: 0 auto;
+.edit_user .form_body form .form_field:last-child input {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #D6D6D6;
+  color: #40687E;
+  border: 1px solid #D6D6D6;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=main.css.map */
