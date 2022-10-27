@@ -6698,23 +6698,86 @@ body {
 }
 
 .orders {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .orders .order_head {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.orders .order_head span {
+.orders .order_head h3 {
   grid-column: span 2;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .orders .order_head form {
-  grid-column: 5/11;
+  grid-column: 5/-1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+.orders .order_head form input {
+  border: 1px solid rgba(64, 104, 126, 0.35);
+  background: rgba(184, 184, 184, 0.12);
+  padding: 0.4rem;
+  border-radius: 0.7rem 0;
+}
+.orders .order_head form input:focus {
+  outline: none;
+}
+.orders .order_head form input::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C1C1C1;
+}
+.orders .order_head form input::-moz-placeholder {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C1C1C1;
+}
+.orders .order_head form input:-ms-input-placeholder {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C1C1C1;
+}
+.orders .order_head form input::-ms-input-placeholder {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C1C1C1;
+}
+.orders .order_head form input::placeholder {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C1C1C1;
+}
+.orders .order_head form input:first-child {
+  width: 22rem;
+}
+.orders .order_head form img {
+  position: absolute;
+  left: 20rem;
+}
+.orders .order_head form .search_icon {
+  color: #fff;
+  background-color: #40687e;
+  padding: 8px 11px;
+  position: absolute;
+  left: 18.2rem;
+  border-radius: 11px 0 11px;
+  top: 50%;
+  -webkit-transform: translate(60%, -50%);
+          transform: translate(60%, -50%);
+}
+.orders .order_head form .arrow_icon {
+  color: #fff;
+  background-color: #40687e;
+  padding: 8px 11px;
+  position: absolute;
+  right: 1px;
+  border-radius: 11px 0 11px;
 }
 .orders .order_nav {
   margin-top: 1rem;
@@ -6723,6 +6786,28 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   font-size: 0.9rem;
+}
+.orders .order_nav nav ul li button {
+  font-size: 0.9rem;
+  color: #40687E;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid #A2BBC9;
+  font-weight: 500;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+.orders .order_nav nav ul li button:hover {
+  background: rgba(64, 104, 126, 0.12);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+}
+.orders .order_nav nav ul li button.active {
+  background: rgba(64, 104, 126, 0.12);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
 }
 .orders .order_nav nav ul li:first-child {
   grid-column: 3/span 2;
@@ -6745,8 +6830,9 @@ body {
   grid-template-columns: repeat(12, 1fr);
   text-align: center;
   font-size: 0.9rem;
-  background-color: #B0B5B8;
+  background: rgba(21, 60, 81, 0.12);
   padding-block: 0.5rem;
+  border: 1px solid #B0B5B8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -6768,7 +6854,7 @@ body {
 .orders .order_product .product_body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding-block: 0.5rem;
+  padding-block: 0.3rem;
 }
 .orders .order_product .product_body .product_img:first-child {
   grid-column: 2/span 1;
@@ -6799,12 +6885,21 @@ body {
 .orders .order_product .product_body .product_img a {
   font-size: 0.7rem;
   color: #40687E;
-  background-color: #FCFCFC;
+  background-color: #ECEFF0;
   padding: 0.3rem 0.5rem;
   border-radius: 6px;
   margin-top: -0.3rem;
   border: 1px solid #A2BBC9;
   font-weight: 500;
   margin-top: -1rem;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.orders .order_product .product_body .product_img a:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #63889D;
+  border: 1px solid #A2BBC9;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

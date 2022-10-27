@@ -1,16 +1,24 @@
 .orders
     .order_head 
-        span My Order
-        form(action="#") 
-            input(type="search", name="search", placeholder="Search with product name")
-            input(type="text", name="text", placeholder="Order Date")
+        h3 My Order
+        form(action="#")
+            div
+                input(type="search", name="search", placeholder="Search with product name")
+                i.fa-solid.fa-magnifying-glass.search_icon
+            div
+                i.fa-solid.fa-arrow-down.arrow_icon
+                input(type="text", name="text", placeholder="Order Date")
     .order_nav 
         nav
             ul 
-                li All Order
-                li On Progress
-                li Delivered orders
-                li Returned orders
+                li
+                    button.active All Order
+                li 
+                    button On Progress
+                li 
+                    button Delivered orders
+                li 
+                    button Returned orders
     .order_product
         .product_head
             .product_info 

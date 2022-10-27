@@ -35,19 +35,32 @@
       </div>
       <div class="content">
         <div class="orders">
-          <div class="order_head"> <span>My Order</span>
-            <form action="#"> 
-              <input type="search" name="search" placeholder="Search with product name">
-              <input type="text" name="text" placeholder="Order Date">
+          <div class="order_head"> 
+            <h3>My Order</h3>
+            <form action="#">
+              <div>
+                <input type="search" name="search" placeholder="Search with product name"><i class="fa-solid fa-magnifying-glass search_icon"></i>
+              </div>
+              <div><i class="fa-solid fa-arrow-down arrow_icon"></i>
+                <input type="text" name="text" placeholder="Order Date">
+              </div>
             </form>
           </div>
           <div class="order_nav"> 
             <nav>
               <ul> 
-                <li>All Order</li>
-                <li>On Progress</li>
-                <li>Delivered orders</li>
-                <li>Returned orders</li>
+                <li>
+                  <button class="active">All Order</button>
+                </li>
+                <li> 
+                  <button>On Progress</button>
+                </li>
+                <li> 
+                  <button>Delivered orders</button>
+                </li>
+                <li> 
+                  <button>Returned orders</button>
+                </li>
               </ul>
             </nav>
           </div>
