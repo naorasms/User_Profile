@@ -1,0 +1,85 @@
+.orders
+    .more_about_order   
+        h3 More about Order
+        .go_back
+        a(href="my_orders.html") Go Back
+    #Delivered_orders.active(data-tab-content)
+        .order_product
+            .product_head
+                .product_info 
+                    p Order Date 
+                    span 22-09-2022 13:15
+                .product_info 
+                    p Order NO 
+                    span 98475-34563478
+                .product_info 
+                    p Delivery Situation 
+                    span Delivered
+                .product_info 
+                    p  Estimated Delivery Date 
+                    span 27-09-2022
+                //- .product_info 
+                //-     p Total
+                //-     span 350TL
+            .product_body
+                .progress
+                    .progress_icone
+                        i.fa-solid.fa-truck-fast.ship_icone
+                        h3 Shipped
+                    .timeLine
+                        ul
+                            li: span order has Taken
+                            li: span Being prepared
+                            li: span Being Shipped
+                            li: span Delivered 
+                        .line
+                            .inner_line
+            .container_Delivered
+                .product_img.about_more
+                    img(src="img/pro_1.png", alt="pro_1")
+                    .product_about 
+                        span Watch 
+                        p Lorem ipsum dolor sit amet, consectetur.
+                        span 250TL
+                .review
+                    a(href="#") Return
+                    a(href="review_order.html") Review
+                
+           
+        .order_product
+            //- .product_head
+                .product_info 
+                    p Order Date 
+                    span 22-09-2022 13:15
+                .product_info 
+                    p Product NO 
+                    span 1
+                .product_info 
+                    p Delivery Situation 
+                    span Delivered
+                .product_info 
+                    p  Estimated Delivery Date 
+                    span 27-09-2022
+                .product_info 
+                    p Total
+                    span 350TL
+            .product_body
+                .Shipping_Details
+                    .shipping_detail 
+                        h3 Shipping Details 
+                        h4 Delivery Address
+                        span Rana AYDIN
+                        p Cagdas mah. 72 nolu cadd. tura apart. kat1 daire1 Sahinbey  Gaziantep
+                    .payment
+                        h3 Payment information
+                        p: span.visa VISA 
+                            | **** 4505
+                        .price 
+                            h5 Product Price
+                            span 250TL
+                        .amount 
+                            h5 Shipping Amount
+                            span 19TL
+                        .total
+                            h5 Total 
+                            span 269TL

@@ -7193,7 +7193,6 @@ body {
 
 #On_Progress .order_product {
   padding-bottom: 2rem;
-  border: none;
 }
 
 #On_Progress .about_more {
@@ -7342,6 +7341,203 @@ body {
   border-top: 1px solid #EDEDED;
 }
 #On_Progress .Shipping_Details .payment .total span {
+  color: #135C9E;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.more_about_order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container_Delivered {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 1px solid #B4BEC5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  margin: auto;
+}
+.container_Delivered .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+.container_Delivered a {
+  grid-column: 5;
+  background: rgba(64, 104, 126, 0.12);
+  border: 1px solid #A2BBC9;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #40687E;
+  padding: 0.4rem 0.7rem;
+}
+
+#Delivered_orders .order_product {
+  padding-bottom: 2rem;
+}
+
+#Delivered_orders .about_more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14rem;
+  height: 5rem;
+}
+#Delivered_orders .about_more .product_about span {
+  font-size: 13px;
+  color: #40687E;
+  font-weight: 500;
+}
+#Delivered_orders .about_more .product_about p {
+  font-size: 0.7rem;
+  color: #777777;
+  font-weight: 400;
+}
+
+.product_img {
+  margin-block: 1rem;
+  margin-right: 2rem;
+  grid-column: 2;
+  width: 100px;
+  height: 120px;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+.product_img img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90px;
+  height: 65px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0.3rem 0.5rem;
+}
+
+#Delivered_orders .Shipping_Details {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 1rem;
+}
+#Delivered_orders .Shipping_Details .shipping_detail {
+  background-color: #fff;
+  border-radius: 18px;
+  text-align: left;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-inline: 1rem;
+  padding-bottom: 3rem;
+}
+#Delivered_orders .Shipping_Details .shipping_detail h3 {
+  color: #40687E;
+  text-align: center;
+  padding-block: 1.3rem;
+  border-bottom: 1px solid #EDEDED;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#Delivered_orders .Shipping_Details .shipping_detail h4 {
+  color: #40687E;
+  font-size: 1rem;
+  padding-block: 0.9rem;
+}
+#Delivered_orders .Shipping_Details .shipping_detail span {
+  color: #777777;
+  font-size: 0.8rem;
+  padding-block: 0.5rem;
+  display: block;
+}
+#Delivered_orders .Shipping_Details .shipping_detail p {
+  color: #777777;
+  font-size: 0.7rem;
+  max-width: 66%;
+}
+#Delivered_orders .Shipping_Details .payment {
+  background-color: #fff;
+  border-radius: 18px;
+  text-align: left;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-inline: 1rem;
+}
+#Delivered_orders .Shipping_Details .payment h3 {
+  color: #40687E;
+  text-align: center;
+  padding-block: 1.3rem;
+  border-bottom: 1px solid #EDEDED;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#Delivered_orders .Shipping_Details .payment p {
+  color: #40687E;
+  padding: 0.5rem 0 1rem 0;
+}
+#Delivered_orders .Shipping_Details .payment h5 {
+  font-size: 1rem;
+  color: #40687E;
+  font-weight: 600;
+}
+#Delivered_orders .Shipping_Details .payment .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#Delivered_orders .Shipping_Details .payment .price span {
+  color: #777777;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#Delivered_orders .Shipping_Details .payment .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem 0;
+}
+#Delivered_orders .Shipping_Details .payment .amount span {
+  color: #777777;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#Delivered_orders .Shipping_Details .payment .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-block: 1rem;
+  border-top: 1px solid #EDEDED;
+}
+#Delivered_orders .Shipping_Details .payment .total span {
   color: #135C9E;
   font-size: 0.9rem;
   font-weight: 400;
