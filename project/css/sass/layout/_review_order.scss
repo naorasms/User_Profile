@@ -17,6 +17,16 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #F0F0F0;
+        h3{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #40687E;
+            font-weight: 600;
+            img{
+                width: 25px;
+                vertical-align: bottom;
+
+            }
+        }
         .close-button{
             background-color: transparent;
             border: none;

@@ -1,6 +1,19 @@
 .more_about_order{
     display: flex;
     justify-content: space-between;
+    h3{
+        font-weight: 600;
+        font-size: 1rem;
+        color: #414446;
+    }
+    .go_back{
+        a{
+            font-size: .8rem;
+            color: #777;
+            font-weight: 500;
+            margin-right: 2rem;
+        }
+    }
 }
 .container_Delivered{
     display: grid;

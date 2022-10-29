@@ -21,10 +21,9 @@ tabs.forEach(tab => {
 })
 console.log("sssssssssssssss")
 
-openPopup.forEach(a => {
-    a.addEventListener('click', () =>{
-        let target = document.querySelector(a.dataset.popupTarget)
-        console.log(target)
+openPopup.forEach(btn => {
+    btn.addEventListener('click', () =>{
+        let target = document.querySelector(btn.dataset.popupTarget)
         openModel(target)
     })
 })
@@ -36,9 +35,9 @@ overlay.addEventListener('click', () => {
     })
 })
 
-closePopup.forEach(a => {
-    a.addEventListener('click', () =>{
-        let target = a.closest('.modal')
+closePopup.forEach(btn => {
+    btn.addEventListener('click', () =>{
+        let target = btn.closest('.modal')
         closeModel(target)
     })
 })
