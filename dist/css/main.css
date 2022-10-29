@@ -7542,4 +7542,164 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
 }
+
+.review_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 460px;
+  max-width: 80%;
+  background-color: #fff;
+  z-index: 10;
+}
+.review_popup .review_head {
+  padding: 1rem 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+.review_popup .review_head .close-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.review_popup .review_product .product_img.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14rem;
+  height: 5rem;
+  margin: auto;
+  margin-block: 1.5rem;
+  background-color: #fff;
+  place-items: center;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #F0F0F0;
+}
+.review_popup .review_product .product_img.popup img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90px;
+  height: 65px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0.3rem 0.5rem;
+}
+.review_popup .review_product .product_img.popup .product_about span {
+  font-size: 13px;
+  color: #40687E;
+  font-weight: 500;
+}
+.review_popup .review_product .product_img.popup .product_about p {
+  font-size: 0.7rem;
+  color: #777777;
+  font-weight: 400;
+}
+.review_popup .rate_product {
+  padding: 0.8rem 0.9rem;
+  border-top: 1px solid #F0F0F0;
+}
+.review_popup .rate_product h3 {
+  color: #40687E;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.review_popup .rate_product .rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.5rem;
+}
+.review_popup .rate_product .rates span {
+  color: #777;
+  font-weight: 500;
+}
+.review_popup .your_comment {
+  padding: 0.8rem 0.9rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment label {
+  display: block;
+  color: #777;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea {
+  background: rgba(247, 246, 246, 0.5);
+  border: 1px solid #D6D6D6;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  padding: 0.5rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea:focus {
+  outline: none;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea::-webkit-input-placeholder {
+  color: #C1C1C1;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea::-moz-placeholder {
+  color: #C1C1C1;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea:-ms-input-placeholder {
+  color: #C1C1C1;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea::-ms-input-placeholder {
+  color: #C1C1C1;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.review_popup .your_comment .feild_comment .ur_comment textarea::placeholder {
+  color: #C1C1C1;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.review_popup .your_comment .feild_comment .show_urName {
+  margin-top: 0.5rem;
+}
+.review_popup .your_comment .feild_comment .show_urName label {
+  color: #C1C1C1;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.review_popup .your_comment .feild_submit {
+  margin: 2rem 0;
+}
+.review_popup .your_comment .feild_submit input {
+  margin: auto;
+  display: block;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #D6D6D6;
+  color: #40687E;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: rgba(64, 104, 126, 0.12);
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
