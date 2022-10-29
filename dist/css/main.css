@@ -7547,12 +7547,18 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   width: 460px;
   max-width: 80%;
   background-color: #fff;
   z-index: 10;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+.review_popup.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 .review_popup .review_head {
   padding: 1rem 0.9rem;
@@ -7571,6 +7577,7 @@ body {
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
+  font-weight: bold;
   cursor: pointer;
 }
 .review_popup .review_product .product_img.popup {
@@ -7701,5 +7708,22 @@ body {
   font-weight: 600;
   background: rgba(64, 104, 126, 0.12);
   cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(64, 104, 126, 0.12);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 .review_popup#modal 
     .review_head 
         h3 Review 
-        button.close-button &times;
+        button(data-close-button).close-button &times;
     .review_product 
         .product_img.popup
             img(src="img/pro_2.png", alt="pro_1")
@@ -25,4 +25,4 @@
                     label(for="") Show your name with comment
             .feild_submit
                 input(type="submit", value="Send")
-.overlay
+#overlay

@@ -79,7 +79,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur.</p><span>250TL</span>
                   </div>
                 </div>
-                <div class="review"><a href="#">Return</a><a href="review_order.html">Review</a></div>
+                <div class="review"><a href="#">Return</a><a href="#" data-popup-target="#modal">Review</a></div>
               </div>
             </div>
             <div class="order_product">
@@ -109,43 +109,43 @@
             </div>
           </div>
         </div>
-        <div class="review_popup" id="modal"> 
-          <div class="review_head"> 
-            <h3>Review </h3>
-            <button class="close-button">&times;</button>
-          </div>
-          <div class="review_product"> 
-            <div class="product_img popup"><img src="img/pro_2.png" alt="pro_1">
-              <div class="product_about"> <span>Watch </span>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p><span>250TL</span>
-              </div>
-            </div>
-          </div>
-          <div class="rate_product">
-            <h3>Please Rate The Product</h3>
-            <div class="rates"><span>Rate Item </span><span>******</span></div>
-          </div>
-          <div class="your_comment"> 
-            <form action=""> 
-              <div class="feild_comment">
-                <div class="ur_comment">
-                  <label for="">Your Comment</label>
-                  <textarea name="" cols="45" rows="4" placeholder="your review about size and quality"></textarea>
-                </div>
-                <div class="show_urName">
-                  <input type="checkbox" name="">
-                  <label for="">Show your name with comment</label>
-                </div>
-              </div>
-              <div class="feild_submit">
-                <input type="submit" value="Send">
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="overlay"></div>
       </div>
     </div>
+    <div class="review_popup modal" id="modal"> 
+      <div class="review_head"> 
+        <h3>Review </h3>
+        <button class="close-button" data-close-button>&times;</button>
+      </div>
+      <div class="review_product"> 
+        <div class="product_img popup"><img src="img/pro_2.png" alt="pro_1">
+          <div class="product_about"> <span>Watch </span>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p><span>250TL</span>
+          </div>
+        </div>
+      </div>
+      <div class="rate_product">
+        <h3>Please Rate The Product</h3>
+        <div class="rates"><span>Rate Item </span><span>******</span></div>
+      </div>
+      <div class="your_comment"> 
+        <form action=""> 
+          <div class="feild_comment">
+            <div class="ur_comment">
+              <label for="">Your Comment</label>
+              <textarea name="" cols="45" rows="4" placeholder="your review about size and quality"></textarea>
+            </div>
+            <div class="show_urName">
+              <input type="checkbox" name="">
+              <label for="">Show your name with comment</label>
+            </div>
+          </div>
+          <div class="feild_submit">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="overlay"></div>
     <script src="js/all.min.js"> </script>
     <script src="js/main.js"> </script>
   </body>
