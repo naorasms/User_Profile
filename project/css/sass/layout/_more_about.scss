@@ -10,6 +10,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 95%;
     margin: auto;
+    margin-bottom: 1.5rem;
     a{
         margin: auto;
         grid-column: 5;
@@ -23,9 +24,9 @@
 
     }
 }
-#On_Progress .order_product{
+#On_Progress .order_product.price{
     padding-bottom: 2rem;
-    // border:none
+    border:none
 }
 #On_Progress  .about_more{
     display: flex;
@@ -81,7 +82,7 @@
         text-align: left;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding-inline: 1rem;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
         h3{
             color: #40687E;
             text-align: center;

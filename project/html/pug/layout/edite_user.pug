@@ -20,19 +20,24 @@
                 input(type="address", name="" id="address")
             .form_field.left
                 label(for="phone") Phone
-                input(type="tel", name="" id="phone")
+                select(name="") 
+                    option(value="") +90
+                    option(value="") +963
+                input(type="tel", name="" id="phone" placeholder="(*********)")
             .form_field.left
                 label(for="dob") Date of Birth
                 select(name="") 0
                     option(value="") day
-                    option(value="") 2
-                select(name="") 
+                    each d in ["Sunday","Monday" ,"Tuesday" ,"Wednesday" , "Thursday","Friday" , "Saturday"]
+                        option(value="")= d
+                select(name="")
                     option(value="") month
-                    option(value="") 2
-                select(name="") 0
+                    each i in ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+                        option(value="")= i
+                select(name="")
                     option(value="") year
-                    option(value="") 2  
-                //- input(type="date", name="" id="dob")
+                    - for (var i = 1930; i <= 2005; i++ )
+                        option(value="") #{i}  
             .form_field.left
                 label(for="Gender") Gender
                 .gender_detils

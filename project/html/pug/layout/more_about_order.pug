@@ -2,6 +2,7 @@
     .more_about_order   
         h3 More about Order
         .go_back
+            img(src="img/back.png", alt="", srcset="")
             a(href="my_orders.html") Go Back
     #On_Progress.active(data-tab-content)
         .order_product
@@ -10,17 +11,17 @@
                     p Order Date 
                     span 22-09-2022 13:15
                 .product_info 
-                    p Product NO 
-                    span 2
+                    p Order NO 
+                    span 98475-34563478
                 .product_info 
                     p Delivery Situation 
                     span On Progress
                 .product_info 
                     p  Estimated Delivery Date 
                     span 27-09-2022
-                .product_info 
-                    p Total
-                    span 350TL
+                //- .product_info 
+                //-     p Total
+                //-     span 350TL
             .product_body
                 .progress
                     .progress_icone
@@ -44,23 +45,7 @@
                 a(href="#", data-popup-target="#modal") Return
                 
            
-        .order_product
-            //- .product_head
-                .product_info 
-                    p Order Date 
-                    span 22-09-2022 13:15
-                .product_info 
-                    p Product NO 
-                    span 1
-                .product_info 
-                    p Delivery Situation 
-                    span Delivered
-                .product_info 
-                    p  Estimated Delivery Date 
-                    span 27-09-2022
-                .product_info 
-                    p Total
-                    span 350TL
+        .order_product.price
             .product_body
                 .Shipping_Details
                     .shipping_detail 
@@ -81,103 +66,3 @@
                         .total
                             h5 Total 
                             span 269TL
-
-
-    //- div#On_Progress(data-tab-content)
-    //-     .order_product
-    //-         .product_head
-    //-             .product_info 
-    //-                 p Order Date 
-    //-                 span 22-09-2022 13:15
-    //-             .product_info 
-    //-                 p Product NO 
-    //-                 span 2
-    //-             .product_info 
-    //-                 p Delivery Situation 
-    //-                 span On Progress
-    //-             .product_info 
-    //-                 p  Estimated Delivery Date 
-    //-                 span 27-09-2022
-    //-             .product_info 
-    //-                 p Total
-    //-                 span 350TL
-    //-         .product_body
-    //-             .progress
-    //-                 .progress_icone
-    //-                     i.fa-solid.fa-truck-fast.ship_icone
-    //-                     h3 On Shipping
-    //-                 .timeLine
-    //-                     ul
-    //-                         li: span order has Taken
-    //-                         li: span Being prepared
-    //-                         li: span Being Shipped
-    //-                         li: span Delivered 
-    //-                     .line
-    //-                         .inner_line        
-    //-             .product_img.prog_first 
-    //-                 img(src="img/pro_2.png", alt="pro_1")
-    //-                 a(href="#")  More Details
-    //-             .product_img 
-    //-                 img(src="img/pro_3.png", alt="pro_2")
-    //-                 a(href="#")  More Details
-    //- div#Delivered_orders(data-tab-content)
-    //-     .order_product
-    //-         .product_head
-    //-             .product_info 
-    //-                 p Order Date 
-    //-                 span 22-09-2022 13:15
-    //-             .product_info 
-    //-                 p Product NO 
-    //-                 span 1
-    //-             .product_info 
-    //-                 p Delivery Situation 
-    //-                 span Delivered
-    //-             .product_info 
-    //-                 p  Estimated Delivery Date 
-    //-                 span 27-09-2022
-    //-             .product_info 
-    //-                 p Total
-    //-                 span 150TL
-    //-         .product_body
-    //-             .progress
-    //-                 .progress_icone
-    //-                     i.fa-solid.fa-truck-fast.ship_icone
-    //-                     h3 Shipped
-    //-                 .timeLine
-    //-                     ul
-    //-                         li: span Order has Taken
-    //-                         li: span Being prepared
-    //-                         li: span Being Shipped
-    //-                         li: span Delivered 
-    //-                     .line
-    //-                         .inner_line  
-    //-             .product_img.prog_first 
-    //-                 img(src="img/pro_1.png", alt="pro_1")
-    //-                 a(href="#")  More Details             
-    //- div#Returned_orders(data-tab-content)
-    //-     .order_product
-    //-         .product_head
-    //-             .product_info 
-    //-                 p Order Date 
-    //-                 span 22-09-2022 13:15
-    //-             .product_info 
-    //-                 p Product NO 
-    //-                 span 1
-    //-             .product_info 
-    //-                 p Delivery Situation 
-    //-                 span On Progress
-    //-             .product_info 
-    //-                 p  Estimated Delivery Date 
-    //-                 span 27-09-2022
-    //-             .product_info 
-    //-                 p Total
-    //-                 span 350TL
-    //-         .product_body
-    //-             .progress
-    //-                 .progress_icone
-    //-                     <i class="fa-regular fa-turn-down-left"></i>
-    //-                     h3 Returned
-    //-             .product_img.prog_first 
-    //-                 img(src="img/pro_4.png", alt="pro_1")
-    //-                 a(href="#")  More Detailzxxxxxxxxxxxxs 
-    

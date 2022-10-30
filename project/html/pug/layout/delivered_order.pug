@@ -2,6 +2,7 @@
     .more_about_order   
         h3 More about Order
         .go_back
+            img(src="img/back.png", alt="", srcset="")
             a(href="my_orders.html") Go Back
     #Delivered_orders.active(data-tab-content)
         .order_product
@@ -18,9 +19,6 @@
                 .product_info 
                     p  Estimated Delivery Date 
                     span 27-09-2022
-                //- .product_info 
-                //-     p Total
-                //-     span 350TL
             .product_body
                 .progress
                     .progress_icone
@@ -46,23 +44,7 @@
                     a(href="#", data-popup-target="#modal") Review
                 
            
-        .order_product
-            //- .product_head
-                .product_info 
-                    p Order Date 
-                    span 22-09-2022 13:15
-                .product_info 
-                    p Product NO 
-                    span 1
-                .product_info 
-                    p Delivery Situation 
-                    span Delivered
-                .product_info 
-                    p  Estimated Delivery Date 
-                    span 27-09-2022
-                .product_info 
-                    p Total
-                    span 350TL
+        .order_product.price
             .product_body
                 .Shipping_Details
                     .shipping_detail 

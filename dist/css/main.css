@@ -6601,12 +6601,9 @@ body {
   display: block;
   position: relative;
 }
-.edit_user .edite_header img::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: #2D2F31;
+.edit_user .edite_header img:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 .edit_user .edite_header .edite_icon {
   font-size: 1.5rem;
@@ -6621,6 +6618,7 @@ body {
   margin-right: 1rem;
   color: #2D2F31;
   font-weight: 600;
+  position: relative;
 }
 .edit_user .form_body {
   padding-block: 1rem;
@@ -6633,6 +6631,30 @@ body {
 }
 .edit_user .form_body form .left {
   grid-column: 1/2;
+}
+.edit_user .form_body form .left select {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #D6D6D6;
+  width: 7.2rem;
+  padding: 0.4rem;
+  color: #6A6A6A;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.edit_user .form_body form .left .gender_detils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.edit_user .form_body form .left .gender_detils span label {
+  color: #777;
+  font-size: 0.8rem;
+}
+.edit_user .form_body form .left .gender_detils span:last-child {
+  margin-right: 6rem;
 }
 .edit_user .form_body form .form_field {
   padding-block: 0.5rem;
@@ -6649,12 +6671,17 @@ body {
 .edit_user .form_body form .form_field label[for=m] {
   display: unset;
 }
+.edit_user .form_body form .form_field input#phone {
+  width: 61%;
+}
 .edit_user .form_body form .form_field input:not([type=radio]) {
   padding-bottom: 0.5rem;
   width: 350px;
   border: 1px solid #D6D6D6;
   height: 2.3rem;
   padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #D6D6D6;
 }
 .edit_user .form_body form .form_field input:not([type=radio]):focus {
   outline: none;
@@ -6662,14 +6689,6 @@ body {
 .edit_user .form_body form .form_field input[type=radio] {
   padding-bottom: 0.5rem;
   margin-right: 1rem;
-}
-.edit_user .form_body form .form_field .gender_detils {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .edit_user .form_body form .form_field:last-child {
   grid-column: span 2;
@@ -6697,16 +6716,18 @@ body {
 }
 
 .orders {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .orders .order_head {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 2rem;
 }
 .orders .order_head h3 {
   grid-column: span 2;
   font-size: 1.5rem;
   font-weight: 600;
+  color: #414446;
 }
 .orders .order_head form {
   grid-column: 5/-1;
@@ -6850,6 +6871,7 @@ body {
 .orders .order_product .product_head .product_info span {
   color: #777777;
   font-size: 0.8rem;
+  font-weight: 500;
 }
 .orders .order_product .product_body {
   display: grid;
@@ -7091,6 +7113,16 @@ body {
   grid-column: 1/3;
   justify-self: end;
 }
+.orders #Returned_orders .progress_icone img {
+  width: 25px;
+  vertical-align: bottom;
+  margin-right: 0.2rem;
+}
+.orders #Returned_orders .progress_icone h3 {
+  color: #40687E;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
 .orders #Returned_orders .progress_icone .ship_icone {
   color: #40687E;
   font-size: 1.5rem;
@@ -7178,6 +7210,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 95%;
   margin: auto;
+  margin-bottom: 1.5rem;
 }
 .container_about a {
   margin: auto;
@@ -7191,8 +7224,9 @@ body {
   padding: 0.4rem 0.7rem;
 }
 
-#On_Progress .order_product {
+#On_Progress .order_product.price {
   padding-bottom: 2rem;
+  border: none;
 }
 
 #On_Progress .about_more {
@@ -7251,7 +7285,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-inline: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 #On_Progress .Shipping_Details .shipping_detail h3 {
   color: #40687E;
@@ -7359,6 +7393,9 @@ body {
   font-size: 1rem;
   color: #414446;
 }
+.more_about_order .go_back img {
+  margin-right: 0.3rem;
+}
 .more_about_order .go_back a {
   font-size: 0.8rem;
   color: #777;
@@ -7374,6 +7411,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 95%;
   margin: auto;
+  margin-bottom: 1.5rem;
 }
 .container_Delivered .review {
   display: -webkit-box;
@@ -7399,8 +7437,9 @@ body {
   padding: 0.4rem 0.7rem;
 }
 
-#Delivered_orders .order_product {
+#Delivered_orders .order_product.price {
   padding-bottom: 2rem;
+  border: none;
 }
 
 #Delivered_orders .about_more {
