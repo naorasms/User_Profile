@@ -51,14 +51,14 @@
         grid-column: span 9;
         form{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
             gap: 0 3rem;
             .left{
                 grid-column: 1 / 2;
                 select{
                     background: rgba(255, 255, 255, 0.5);
                     border: 1px solid #D6D6D6;
-                    width: 7.2rem;
+                    width: 32%;
                     padding: 0.4rem;
                     color: #6A6A6A;
                     font-size: 0.9rem;
@@ -97,11 +97,11 @@
 
                 }
                 input#phone{
-                    width: 61%;
+                    width: 66%;
                 }
                 input:not([type="radio"]){
                     padding-bottom: .5rem;
-                    width: 350px;
+                    width: 100%;
                     border: 1px solid #D6D6D6;
                     height: 2.3rem;
                     padding: .5rem;
@@ -149,4 +149,40 @@
         }
      
     }
+}
+
+
+
+
+@media (max-width: 576px) {  
+    .edit_user{
+        display: flex;
+        flex-direction: column;
+        .edite_header{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            img{
+                width: 6rem;
+                height: 6rem;
+            }
+            .user_name{
+                margin-left: 0;
+                h2{
+                    margin-top: .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .form_body{
+            form{
+                display: contents;
+                // grid-template-columns: 1fr
+                .form_field{
+                    padding-block: .4rem 
+                }
+            }
+        }
+    }
+
 }

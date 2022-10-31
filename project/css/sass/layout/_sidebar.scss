@@ -1,5 +1,5 @@
 .sidebar{
-    width: 250px;
+    width: 300px;
     background-color: #fff;
     min-height: 100%;
     position: fixed;
@@ -9,6 +9,7 @@
     display:flex;
     flex-direction: column;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
     .sidebar_header{
         display: flex;
         justify-content: space-evenly;
@@ -20,19 +21,27 @@
             width: 50px;
             height: 50px;
         }
-        .name{
-            font-size: .9rem;
-            font-weight: 600;
-            letter-spacing: -1px;
+        .profile_info{
+            position: relative;
+
+            .name{
+                font-size: .9rem;
+                font-weight: 600;
+                letter-spacing: -1px;
+            }
+            .email{
+                font-size: .7rem;
+                opacity: .8;
+            }
+            .noti_icon{
+                align-self: flex-start;
+                font-size: .9rem;
+                position: absolute;
+                right: 10px;
+                top: -10px;
+            }
         }
-        .email{
-            font-size: .7rem;
-            opacity: .8;
-        }
-        .noti_icon{
-            align-self: flex-start;
-            font-size: .9rem;
-        }
+
     }
     .sidebar_body{
         justify-self: start;
@@ -55,6 +64,9 @@
                 width: 100%;
                 border-radius: 6px;
                 transition:  ease-in-out .3s;
+                // span{
+                //     display: none;
+                // }
                 .menu_icon{
                     margin-right:.5rem ;
                 }
@@ -101,3 +113,108 @@
         }
     }
 } 
+
+
+
+
+/* Medium Screen */
+
+@media (max-width: 992px) {
+
+    .sidebar .sidebar_header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+    
+        img{
+        width: 75px;
+        height: 75px;
+        }
+        .profile_info{
+            padding-block: .5rem;
+            position: relative;
+            .name{
+                font-size: 1rem;
+                margin-bottom: .3rem;
+                font-weight: 500;
+            }
+            .email{
+                font-size: .8rem;
+                font-weight: 400;
+                color: #2e2b2b;
+
+            }
+            .noti_icon{
+                position: absolute;
+                top: -63px;
+                right: 0;
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+   
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+@media (max-width: 575.98px) {  
+    .sidebar{
+        width: 60px;
+        display: none;
+        .sidebar_header{
+            padding-left: .1rem;
+            padding-bottom: 0.1rem;
+            position: relative;
+            img{
+                // display: none;
+                width: 35px;
+                height: 35px;
+                margin-left: .5rem;
+            }
+            .profile_info{
+                .name{
+                    font-size: .6rem;
+                    letter-spacing: 0px;
+                    font-weight: 600;
+                }
+                .email{
+                    display: none;
+                }
+                .noti_icon{
+                    position: absolute;
+                    top: -45px;
+                    right: 0;
+                    font-size: .7rem;
+                }
+            }
+        }
+        .sidebar_body{
+            li{
+                width: 100%;
+                a{
+                    width: 2rem;
+                    .menu_icon{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            span {
+                display: none;
+            }
+        }
+        .sidebar_footer{
+            margin-top: unset;
+            span{
+                display: none;
+            }
+        }
+    }
+}

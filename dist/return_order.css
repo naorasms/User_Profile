@@ -1,0 +1,117 @@
+.return_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 600px;
+  max-width: 80%;
+  background-color: #fff;
+  z-index: 10;
+  transition: 200ms ease-in-out;
+}
+.return_popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.return_popup .return_head {
+  padding: 1rem 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+.return_popup .return_head h3 {
+  color: #40687E;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.return_popup .return_head h3 img {
+  width: 24px;
+  vertical-align: bottom;
+  margin-left: 0.5rem;
+}
+.return_popup .return_head .close-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.return_popup .return_product {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.return_popup .return_product .reason_of_return h3 {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+.return_popup .return_product .reason_of_return select {
+  background: rgba(247, 246, 246, 0.5);
+  border: 1px solid #D6D6D6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 19rem;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  color: #C1C1C1;
+}
+.return_popup .return_product .reason_of_return select:focus {
+  outline: none;
+}
+.return_popup .return_product .reason_of_return select option {
+  font-size: 0.8rem;
+  padding: 10px;
+  display: block;
+}
+.return_popup .return_product .return {
+  width: 150px;
+  background: #FCFCFC;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 17px;
+  padding: 1.5rem;
+  margin-right: 2rem;
+}
+.return_popup .return_product .return .product_about {
+  margin-top: 0.3rem;
+}
+.return_popup .return_product .return .product_about span {
+  color: #40687E;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.return_popup .return_product .return .product_about p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #777;
+}
+.return_popup .send {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.return_popup .send button {
+  display: block;
+  margin: auto;
+  color: #40687E;
+  background: rgba(64, 104, 126, 0.12);
+  border: 1px solid #D6D6D6;
+  border-radius: 13px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(64, 104, 126, 0.12);
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}/*# sourceMappingURL=return_order.css.map */
