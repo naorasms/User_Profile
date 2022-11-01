@@ -111,6 +111,8 @@
                     margin: auto;
                     display: block;
                     padding: .5rem;
+                    resize: none;
+                    width: 100%;
                     &:focus{
                         outline: none;
                     }
@@ -136,11 +138,11 @@
             input{
                 margin: auto;
                 display: block;
-                padding: 0.4rem 1rem;
+                padding: 0.5rem 1.25rem;
                 border-radius: 10px;
                 border: 1px solid #D6D6D6;
                 color: #40687E;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: 600;
                 background: rgba(64, 104, 126, 0.12);
                 cursor: pointer;

@@ -6724,10 +6724,11 @@ body {
 }
 @media (max-width: 575.98px) {
   .sidebar {
-    width: 0px;
-    left: -50px;
+    width: 64px;
+    left: -64px;
     -webkit-transition: ease-in-out 0.3s;
     transition: ease-in-out 0.3s;
+    position: fixed;
   }
   .sidebar.active {
     position: absolute;
@@ -6736,7 +6737,7 @@ body {
   }
   .sidebar .menu_mobile {
     position: absolute;
-    left: 70px;
+    left: 75px;
     top: 10px;
     display: block;
   }
@@ -8018,6 +8019,8 @@ body {
   margin: auto;
   display: block;
   padding: 0.5rem;
+  resize: none;
+  width: 100%;
 }
 .review_popup .your_comment .feild_comment .ur_comment textarea:focus {
   outline: none;
@@ -8061,11 +8064,11 @@ body {
 .review_popup .your_comment .feild_submit input {
   margin: auto;
   display: block;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 10px;
   border: 1px solid #D6D6D6;
   color: #40687E;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   background: rgba(64, 104, 126, 0.12);
   cursor: pointer;

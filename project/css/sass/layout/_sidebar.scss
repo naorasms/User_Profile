@@ -239,12 +239,10 @@
 
 @media (max-width: 575.98px) {  
     .sidebar{
-
-        width: 0px;
-        left: -50px;
-        // transform: translateX(-50px);
-        // display: none;
-        transition: ease-in-out .3s;
+        width: 64px;
+        left: -64px;
+        transition: ease-in-out 0.3s;
+        position: fixed;
         &.active{
             position: absolute;
         width: 60px;
@@ -254,7 +252,7 @@
         }
         .menu_mobile{       
              position: absolute;
-            left: 70px;
+            left: 75px;
             top: 10px;
             display: block;
             .menu{
