@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     .menu_mobile{
-        display: block;
+        display: none;
     }
     .edite_header{
         grid-column: span 12;
@@ -154,9 +154,42 @@
 }
 
 
+@media (min-width: 576px) and (max-width: 767.98px) {
 
+    .edit_user{
 
-@media (max-width: 576px) {  
+        .edite_header{
+            img{
+                width: 130px;
+                height: 130px;
+            }
+        }
+        .form_body{
+            height: 333px;
+            overflow-y: scroll;
+            form{
+                display: grid;
+                grid-template-columns: 1fr;
+                .form_field{
+                    padding-block: .4rem;
+                    grid-column: 1 / 3;
+                    &:last-child{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
+@media (max-width: 575.98px) {  
+    .page{
+        overflow-y: hidden;
+    }
     .edit_user{
         display: flex;
         flex-direction: column;
@@ -165,11 +198,11 @@
             flex-direction: column;
             align-items: center;
             img{
-                width: 6rem;
-                height: 6rem;
+                width: 35%;
+                height: 35%;
             }
             .user_name{
-                margin-left: 0;
+                // margin-left: 0;
                 h2{
                     margin-top: .5rem;
                     font-size: 1.2rem;
@@ -180,10 +213,16 @@
             height: 333px;
             overflow-y: scroll;
             form{
-                display: contents;
-
+                display: grid;
+                grid-template-columns: 1fr;
                 .form_field{
-                    padding-block: .4rem 
+                    padding-block: .4rem;
+                    grid-column: 1 / 3;
+                    &:last-child{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1rem;
+                    }
                 }
             }
         }

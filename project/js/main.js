@@ -8,13 +8,15 @@ let overlay = document.getElementById('overlay');
 
 // Menu Mobil
 let sidebar = document.querySelector(".sidebar");
-let menu_mobil = document.querySelector(".menu_mobil");
+let menu_mobil = document.querySelector(".menu_mobile");
 
 
-menu_mobil.addEventListener('click', () => {
-    sidebar.classList.toggle("active")
-})
+if(menu_mobil){
 
+    menu_mobil.addEventListener('click', () => {
+        sidebar.classList.toggle("active")
+    })
+}
 console.log(menu_mobil)
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -38,12 +40,14 @@ openPopup.forEach(btn => {
     })
 })
 
-// overlay.addEventListener('click', () => {
-//     let modals = document.querySelectorAll('.modal.active')
-//     modals.forEach(modal =>{
-//         closeModel(modal)
-//     })
-// })
+if(overlay){
+    overlay.addEventListener('click', () => {
+        let modals = document.querySelectorAll('.modal.active')
+        modals.forEach(modal =>{
+            closeModel(modal)
+        })
+    })
+}
 
 closePopup.forEach(btn => {
     btn.addEventListener('click', () =>{
