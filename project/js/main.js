@@ -4,8 +4,18 @@ let tabContents = document.querySelectorAll('[data-tab-content]')
 //popup modal
 let openPopup = document.querySelectorAll('[data-popup-target]');
 let closePopup = document.querySelectorAll('[data-close-button]');
-let overlay = document.getElementById('overlay')
+let overlay = document.getElementById('overlay');
 
+// Menu Mobil
+let sidebar = document.querySelector(".sidebar");
+let menu_mobil = document.querySelector(".menu_mobil");
+
+
+menu_mobil.addEventListener('click', () => {
+    sidebar.classList.toggle("active")
+})
+
+console.log(menu_mobil)
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         let target = document.querySelector(tab.dataset.tabTarget)
@@ -28,12 +38,12 @@ openPopup.forEach(btn => {
     })
 })
 
-overlay.addEventListener('click', () => {
-    let modals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal =>{
-        closeModel(modal)
-    })
-})
+// overlay.addEventListener('click', () => {
+//     let modals = document.querySelectorAll('.modal.active')
+//     modals.forEach(modal =>{
+//         closeModel(modal)
+//     })
+// })
 
 closePopup.forEach(btn => {
     btn.addEventListener('click', () =>{

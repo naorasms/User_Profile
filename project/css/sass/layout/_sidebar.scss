@@ -22,6 +22,9 @@
             height: 50px;
         }
         .profile_info{
+            .menu_mobile{
+                display: none;
+            }
             position: relative;
 
             .name{
@@ -167,8 +170,14 @@
 
 @media (max-width: 575.98px) {  
     .sidebar{
-        width: 60px;
-        display: none;
+        width: 0px;
+        left: -50px;
+        // display: none;
+        transition: ease-in-out .3s;
+        &.active{
+        width: 62px;
+        left: 0px;
+        }
         .sidebar_header{
             padding-left: .1rem;
             padding-bottom: 0.1rem;
@@ -180,6 +189,13 @@
                 margin-left: .5rem;
             }
             .profile_info{
+                .menu_mobile{
+                    display: block;
+                    position: absolute;
+                    right: -50px;
+                    top: -38px;
+                    z-index: 1;
+                }
                 .name{
                     font-size: .6rem;
                     letter-spacing: 0px;

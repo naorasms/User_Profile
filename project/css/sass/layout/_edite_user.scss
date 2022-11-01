@@ -1,7 +1,9 @@
 .edit_user{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    
+    .menu_mobile{
+        display: block;
+    }
     .edite_header{
         grid-column: span 12;
         display: flex;
@@ -161,7 +163,7 @@
         .edite_header{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             img{
                 width: 6rem;
                 height: 6rem;
@@ -175,9 +177,11 @@
             }
         }
         .form_body{
+            height: 333px;
+            overflow-y: scroll;
             form{
                 display: contents;
-                // grid-template-columns: 1fr
+
                 .form_field{
                     padding-block: .4rem 
                 }
