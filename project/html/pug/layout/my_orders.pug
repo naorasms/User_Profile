@@ -2,10 +2,10 @@
     .order_head 
         h3 My Order
         form(action="#")
-            div
-                input(type="search", name="search", placeholder="Search with product name")
+            div.search-name-order
                 i.fa-solid.fa-magnifying-glass.search_icon
-            div
+                input(type="search", name="search", placeholder="Search with product name")
+            div.order-date
                 i.fa-solid.fa-arrow-down.arrow_icon
                 input(type="text", name="text", placeholder="Order Date")
     .order_nav 

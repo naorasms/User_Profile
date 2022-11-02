@@ -33,36 +33,8 @@ body{
     display: flex;
 }
 
-// /* Small devices (landscape phones, 576px and up) */
-// @media (max-width: 576px) {  
-//     .container {
-//         width: 480px;
-//     }
-// }
 
-// /* Small Screen */
 
-// @media (min-width: 768px) {
-//     .container {
-//         width: 750px;
-//     }
-// }
-
-// /* Medium Screen */
-
-// @media (min-width: 992px) {
-//     .container {
-//         width: 970px;
-//     }
-// }
-
-// /* Large Screen */
-
-// @media (min-width: 1200px) {
-//     .container {
-//         width: 1170px;
-//     }
-// }
 
 // /* X-Large Screen */
 
@@ -72,34 +44,70 @@ body{
 //     }
 // }
 
+
+
+/* Large Screen */
+
+// @media (min-width: 1200px) {
+//     .container {
+//         width: 1170px;
+//     }
+// }
+
+
+/* Medium Screen */
+
+@media (max-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Small Screen */
+
+@media (max-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+    .container {
+        width: 480px;
+    }
+}
+
+
+
 // /* End Grid Rules */
 
 
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-    .container {
-       width: 480px;
-   }
- }
+// // Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) {
+//     .container {
+//        width: 480px;
+//    }
+//  }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
-        .container {
-        width: 750px;
-    }
- }
+// // Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { 
+//         .container {
+//         width: 750px;
+//     }
+//  }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
-        .container {
-        width: 970px;
-    }
- }
+// // Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) { 
+//         .container {
+//         width: 970px;
+//     }
+//  }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { 
-        .container {
-        width: 1170px;
-    }
-}
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { 
+//         .container {
+//         width: 1170px;
+//     }
+// }

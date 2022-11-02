@@ -126,41 +126,49 @@
 /* Medium Screen */
 
 @media (max-width: 992px) {
+    .sidebar {
+        width: 150px;
+        .sidebar_header{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: .5rem;
+            padding-bottom: .5rem;
+        
+            img{
+            width: 75px;
+            height: 75px;
+            }
+            .profile_info{
+                padding-block: .5rem;
+                position: relative;
+                .name{
+                    // font-size: 1rem;
+                    margin-bottom: .3rem;
+                    font-weight: 500;
+                }
+                .email{
+                    font-size: .65rem;
+                    font-weight: 400;
+                    color: #2e2b2b;
 
-    .sidebar .sidebar_header{
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 1rem;
-        padding-bottom: .5rem;
-    
-        img{
-        width: 75px;
-        height: 75px;
+                }
+                .noti_icon{
+                    position: absolute;
+                    top: -80px;
+                    right: 0;
+                    font-size: 1rem;
+                }
+            }
+
         }
-        .profile_info{
-            padding-block: .5rem;
-            position: relative;
-            .name{
-                font-size: 1rem;
-                margin-bottom: .3rem;
-                font-weight: 500;
-            }
-            .email{
-                font-size: .8rem;
-                font-weight: 400;
-                color: #2e2b2b;
-
-            }
-            .noti_icon{
-                position: absolute;
-                top: -75px;
-                right: -15px;
-                font-size: 1rem;
+        .sidebar_body{
+            li{
+                a{
+                    padding-inline: 0;
+                }
             }
         }
-
     }
-
    
 }
 
@@ -211,6 +219,7 @@
                 width: 100%;
                 a{
                     width: 2rem;
+                    padding-inline: .5rem;
                     .menu_icon{
                         font-size: 1.1rem;
                     }
@@ -244,7 +253,7 @@
         transition: ease-in-out 0.3s;
         position: fixed;
         &.active{
-            position: absolute;
+        position: absolute;
         width: 60px;
         left: 0px;
         // position: fixed;
@@ -292,6 +301,7 @@
                     top: -45px;
                     right: 0;
                     font-size: .7rem;
+                    display: none;
                 }
             }
         }
@@ -300,6 +310,7 @@
                 width: 100%;
                 a{
                     width: 2rem;
+                    padding-inline: .5rem;
                     .menu_icon{
                         font-size: 1.1rem;
                     }

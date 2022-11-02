@@ -10,134 +10,136 @@
   </head>
   <body>
     <div class="page">
-      <div class="sidebar"> 
-        <div class="menu_mobile"><i class="menu fa fa-bars"></i></div>
-        <div class="sidebar_header"><img src="img/avatar.png" alt="" srcset="">
-          <div class="profile_info">
-            <p class="name">Rana AYDIN</p>
-            <p class="email">ranaalmasaleh@gmail.com</p><i class="noti_icon fa-regular fa-bell"></i>
+      <div class="container">
+        <div class="sidebar"> 
+          <div class="menu_mobile"><i class="menu fa fa-bars"></i></div>
+          <div class="sidebar_header"><img src="img/avatar.png" alt="" srcset="">
+            <div class="profile_info">
+              <p class="name">Rana AYDIN</p>
+              <p class="email">ranaalmasaleh@gmail.com</p><i class="noti_icon fa-regular fa-bell"></i>
+            </div>
+          </div>
+          <div class="sidebar_body"> 
+            <nav> 
+              <ul> 
+                <li><a href="edite_user.html"><i class="menu_icon fa-solid fa-user-pen"> </i><span>My Information  </span></a></li>
+                <li>   <a href="my_orders.html"><i class="menu_icon fa-solid fa-truck-fast"></i><span>My Orders</span></a></li>
+                <li> <a href="#"><i class="menu_icon fa-regular fa-heart"></i><span>My Favorites</span></a></li>
+                <li><a href="#"><i class="menu_icon fa-regular fa-envelope"> </i><span>My Messages</span></a></li>
+                <li><a href="#"><i class="menu_icon fa-solid fa-location-dot"> </i><span>My Address</span></a></li>
+                <li><a href="#"><i class="menu_icon fa-regular fa-circle-question"></i><span>Support</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar_footer">           
+            <button><a href="#"><i class="menu_icon fa-solid fa-arrow-right-from-bracket"> </i><span>Log Out</span></a></button>
           </div>
         </div>
-        <div class="sidebar_body"> 
-          <nav> 
-            <ul> 
-              <li><a href="edite_user.html"><i class="menu_icon fa-solid fa-user-pen"> </i><span>My Information  </span></a></li>
-              <li>   <a href="my_orders.html"><i class="menu_icon fa-solid fa-truck-fast"></i><span>My Orders</span></a></li>
-              <li> <a href="#"><i class="menu_icon fa-regular fa-heart"></i><span>My Favorites</span></a></li>
-              <li><a href="#"><i class="menu_icon fa-regular fa-envelope"> </i><span>My Messages</span></a></li>
-              <li><a href="#"><i class="menu_icon fa-solid fa-location-dot"> </i><span>My Address</span></a></li>
-              <li><a href="#"><i class="menu_icon fa-regular fa-circle-question"></i><span>Support</span></a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="sidebar_footer">           
-          <button><a href="#"><i class="menu_icon fa-solid fa-arrow-right-from-bracket"> </i><span>Log Out</span></a></button>
-        </div>
-      </div>
-      <div class="content">
-        <div class="orders">
-          <div class="more_about_order">  
-            <h3>More about Order</h3>
-            <div class="go_back"><img src="img/back.png" alt="" srcset=""><a href="my_orders.html">Go Back</a></div>
-          </div>
-          <div class="active" id="On_Progress" data-tab-content>
-            <div class="order_product">
-              <div class="product_head">
-                <div class="product_info"> 
-                  <p>Order Date </p><span>22-09-2022 13:15</span>
+        <div class="content">
+          <div class="orders">
+            <div class="more_about_order">  
+              <h3>More about Order</h3>
+              <div class="go_back"><img src="img/back.png" alt="" srcset=""><a href="my_orders.html">Go Back</a></div>
+            </div>
+            <div class="active" id="On_Progress" data-tab-content>
+              <div class="order_product">
+                <div class="product_head">
+                  <div class="product_info"> 
+                    <p>Order Date </p><span>22-09-2022 13:15</span>
+                  </div>
+                  <div class="product_info"> 
+                    <p>Order NO </p><span>98475-34563478</span>
+                  </div>
+                  <div class="product_info"> 
+                    <p>Delivery Situation </p><span>On Progress</span>
+                  </div>
+                  <div class="product_info"> 
+                    <p> Estimated Delivery Date </p><span>27-09-2022</span>
+                  </div>
                 </div>
-                <div class="product_info"> 
-                  <p>Order NO </p><span>98475-34563478</span>
+                <div class="product_body">
+                  <div class="progress">
+                    <div class="progress_icone"><i class="fa-solid fa-truck-fast ship_icone"></i>
+                      <h3>On Shipping</h3>
+                    </div>
+                    <div class="timeLine">
+                      <ul>
+                        <li><span>order has Taken</span></li>
+                        <li><span>Being prepared</span></li>
+                        <li><span>Being Shipped</span></li>
+                        <li><span>Delivered </span></li>
+                      </ul>
+                      <div class="line">
+                        <div class="inner_line"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="product_info"> 
-                  <p>Delivery Situation </p><span>On Progress</span>
-                </div>
-                <div class="product_info"> 
-                  <p> Estimated Delivery Date </p><span>27-09-2022</span>
+                <div class="container_about">
+                  <div class="product_img about_more"><img src="img/pro_2.png" alt="pro_1">
+                    <div class="product_about"> <span>Watch </span>
+                      <p>Lorem ipsum dolor sit amet, consectetur.</p><span>250TL</span>
+                    </div>
+                  </div><a href="#" data-popup-target="#modal">Return</a>
                 </div>
               </div>
-              <div class="product_body">
-                <div class="progress">
-                  <div class="progress_icone"><i class="fa-solid fa-truck-fast ship_icone"></i>
-                    <h3>On Shipping</h3>
-                  </div>
-                  <div class="timeLine">
-                    <ul>
-                      <li><span>order has Taken</span></li>
-                      <li><span>Being prepared</span></li>
-                      <li><span>Being Shipped</span></li>
-                      <li><span>Delivered </span></li>
-                    </ul>
-                    <div class="line">
-                      <div class="inner_line"></div>
+              <div class="order_product price">
+                <div class="product_body">
+                  <div class="Shipping_Details">
+                    <div class="shipping_detail"> 
+                      <h3>Shipping Details </h3>
+                      <h4>Delivery Address</h4><span>Rana AYDIN</span>
+                      <p>Cagdas mah. 72 nolu cadd. tura apart. kat1 daire1 Sahinbey  Gaziantep</p>
+                    </div>
+                    <div class="payment">
+                      <h3>Payment information</h3>
+                      <p><span class="visa">
+                          VISA **** 4505</span></p>
+                      <div class="price"> 
+                        <h5>Product Price</h5><span>250TL</span>
+                      </div>
+                      <div class="amount"> 
+                        <h5>Shipping Amount</h5><span>19TL</span>
+                      </div>
+                      <div class="total">
+                        <h5>Total </h5><span>269TL</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="container_about">
-                <div class="product_img about_more"><img src="img/pro_2.png" alt="pro_1">
-                  <div class="product_about"> <span>Watch </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p><span>250TL</span>
-                  </div>
-                </div><a href="#" data-popup-target="#modal">Return</a>
-              </div>
             </div>
-            <div class="order_product price">
-              <div class="product_body">
-                <div class="Shipping_Details">
-                  <div class="shipping_detail"> 
-                    <h3>Shipping Details </h3>
-                    <h4>Delivery Address</h4><span>Rana AYDIN</span>
-                    <p>Cagdas mah. 72 nolu cadd. tura apart. kat1 daire1 Sahinbey  Gaziantep</p>
-                  </div>
-                  <div class="payment">
-                    <h3>Payment information</h3>
-                    <p><span class="visa">
-                        VISA **** 4505</span></p>
-                    <div class="price"> 
-                      <h5>Product Price</h5><span>250TL</span>
-                    </div>
-                    <div class="amount"> 
-                      <h5>Shipping Amount</h5><span>19TL</span>
-                    </div>
-                    <div class="total">
-                      <h5>Total </h5><span>269TL</span>
-                    </div>
-                  </div>
+          </div>
+          <div class="return_popup modal" id="modal"> 
+            <div class="return_head"> 
+              <h3>return<img src="img/return.png" alt="" srcset=""></h3>
+              <button class="close-button" data-close-button>&times;</button>
+            </div>
+            <div class="return_product"> 
+              <div class="reason_of_return"> 
+                <h3>Select The Reason Of Return Item</h3>
+                <select name=""> 
+                  <option value="">select Reason</option>
+                  <option value="">Damage Iten</option>
+                  <option value="">Not true Size </option>
+                  <option value="">Poor Quality</option>
+                  <option value="">Looks Different</option>
+                  <option value="">Arrive Too Late</option>
+                  <option value="">Other issue</option>
+                </select>
+              </div>
+              <div class="return"><img src="img/pro_2.png" alt="pro_1">
+                <div class="product_about"> <span>Watch </span>
+                  <p>Lorem ipsum dolor sit amet.</p><span>250TL</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="return_popup modal" id="modal"> 
-          <div class="return_head"> 
-            <h3>return<img src="img/return.png" alt="" srcset=""></h3>
-            <button class="close-button" data-close-button>&times;</button>
-          </div>
-          <div class="return_product"> 
-            <div class="reason_of_return"> 
-              <h3>Select The Reason Of Return Item</h3>
-              <select name=""> 
-                <option value="">select Reason</option>
-                <option value="">Damage Iten</option>
-                <option value="">Not true Size </option>
-                <option value="">Poor Quality</option>
-                <option value="">Looks Different</option>
-                <option value="">Arrive Too Late</option>
-                <option value="">Other issue</option>
-              </select>
-            </div>
-            <div class="return"><img src="img/pro_2.png" alt="pro_1">
-              <div class="product_about"> <span>Watch </span>
-                <p>Lorem ipsum dolor sit amet.</p><span>250TL</span>
-              </div>
+            <div class="send"> 
+              <button>Send</button>
             </div>
           </div>
-          <div class="send"> 
-            <button>Send</button>
-          </div>
+          <div id="overlay"></div>
         </div>
-        <div id="overlay"></div>
       </div>
     </div>
     <script defer src="js/all.min.js"> </script>
