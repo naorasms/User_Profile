@@ -6471,7 +6471,17 @@ body {
   display: flex;
 }
 
+@media (min-width: 1400px) {
+  .container {
+    width: 1295px;
+  }
+}
 /* Large Screen */
+@media (max-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 /* Medium Screen */
 @media (max-width: 992px) {
   .container {
@@ -6625,7 +6635,7 @@ body {
 /* Medium Screen */
 @media (max-width: 992px) {
   .sidebar {
-    width: 150px;
+    width: 190px;
   }
   .sidebar .sidebar_header {
     -webkit-box-orient: vertical;
@@ -6661,8 +6671,20 @@ body {
     right: 0;
     font-size: 1rem;
   }
+  .sidebar .sidebar_body li {
+    width: 100%;
+  }
   .sidebar .sidebar_body li a {
-    padding-inline: 0;
+    margin-left: 0;
+  }
+  .sidebar .sidebar_body li a span {
+    font-size: 0.8rem;
+  }
+  .sidebar .sidebar_body li:hover a {
+    width: 100%;
+  }
+  .sidebar .sidebar_footer button {
+    width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -6710,6 +6732,7 @@ body {
   .sidebar .sidebar_body li a {
     width: 2rem;
     padding-inline: 0.5rem;
+    margin-left: 16px;
   }
   .sidebar .sidebar_body li a .menu_icon {
     font-size: 1.1rem;
@@ -6788,6 +6811,7 @@ body {
   .sidebar .sidebar_body li a {
     width: 2rem;
     padding-inline: 0.5rem;
+    margin-left: 13px;
   }
   .sidebar .sidebar_body li a .menu_icon {
     font-size: 1.1rem;
@@ -7527,7 +7551,7 @@ body {
 }
 @media (max-width: 768px) {
   .orders {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
   .orders .order_head {
     margin-bottom: 1rem;
@@ -7538,27 +7562,22 @@ body {
   .orders .order_head form input::-webkit-input-placeholder {
     font-size: 0.6rem;
     vertical-align: top;
-    color: red;
   }
   .orders .order_head form input::-moz-placeholder {
     font-size: 0.6rem;
     vertical-align: top;
-    color: red;
   }
   .orders .order_head form input:-ms-input-placeholder {
     font-size: 0.6rem;
     vertical-align: top;
-    color: red;
   }
   .orders .order_head form input::-ms-input-placeholder {
     font-size: 0.6rem;
     vertical-align: top;
-    color: red;
   }
   .orders .order_head form input::placeholder {
     font-size: 0.6rem;
     vertical-align: top;
-    color: red;
   }
   .orders .order_head form .search-name-order .search_icon {
     padding: 7px 8px;
@@ -7601,6 +7620,21 @@ body {
   }
   .orders .order_product .product_body .product_img a {
     font-size: 0.6rem;
+  }
+  .orders #On_Progress .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #On_Progress .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .orders #On_Progress .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .orders #On_Progress .progress .timeLine li {
+    width: 22%;
+  }
+  .orders #On_Progress .progress .timeLine li span {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 992px) {
@@ -7650,6 +7684,36 @@ body {
     font-size: 0.7rem;
     padding: 0.3rem 0.2rem;
   }
+  .orders #On_Progress .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #On_Progress .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .orders #On_Progress .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .orders #On_Progress .progress .timeLine li {
+    width: 23%;
+  }
+  .orders #On_Progress .progress .timeLine li span {
+    font-size: 0.7rem;
+  }
+  .orders #Delivered_orders .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #Delivered_orders .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .orders #Delivered_orders .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .orders #Delivered_orders .progress .timeLine li {
+    width: 23%;
+  }
+  .orders #Delivered_orders .progress .timeLine li span {
+    font-size: 0.7rem;
+  }
 }
 /* Large Screen */
 @media (max-width: 1200px) {
@@ -7659,6 +7723,38 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  #On_Progress .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  #On_Progress .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  #On_Progress .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  #On_Progress .progress .timeLine li {
+    width: 22%;
+  }
+  #On_Progress .progress .timeLine li span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1400px) {
+  .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .progress .timeLine li {
+    width: 22%;
+  }
+  .progress .timeLine li span {
+    font-size: 0.8rem;
   }
 }
 .more_about_order {

@@ -539,7 +539,7 @@
 
 @media (max-width: 768px){
     .orders{
-        padding-top: 1rem;
+        padding-top: 2rem;
         .order_head{
             margin-bottom: 1rem;
             form {
@@ -548,7 +548,7 @@
                     &::placeholder{
                         font-size: .6rem;
                         vertical-align: top;
-                        color: red;
+                
                     }
                 }
                 .search-name-order{
@@ -609,6 +609,27 @@
                 } 
             }
         }
+        #On_Progress{
+            .progress{
+                .progress_icone{
+                    grid-column: 1/4;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .ship_icone{
+                        font-size: 1.2rem;
+                    }
+                }
+                .timeLine{
+                    li{
+                        width: 22%;
+                        span{
+                            font-size: 0.7rem;
+                        }
+                    } 
+                } 
+            }
+        } 
     }
 }
 
@@ -658,6 +679,48 @@
                 } 
             }
         }
+        #On_Progress{
+            .progress{
+                .progress_icone{
+                    grid-column: 1/4;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .ship_icone{
+                        font-size: 1.2rem;
+                    }
+                }
+                .timeLine{
+                    li{
+                        width: 23%;
+                        span{
+                            font-size: 0.7rem;
+                        }
+                    } 
+                } 
+            }
+        }
+        #Delivered_orders {
+            .progress{
+                .progress_icone{
+                    grid-column: 1/4;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .ship_icone{
+                        font-size: 1.2rem;
+                    }
+                }
+                .timeLine{
+                    li{
+                        width: 23%;
+                        span{
+                            font-size: 0.7rem;
+                        }
+                    } 
+                } 
+            }
+        }
     }
 }
 
@@ -666,15 +729,59 @@
 /* Large Screen */
 
 @media (max-width: 1200px) {
+
     .orders{
         .order_nav{
             nav{
                 ul{
-                   display: flex;
-                   justify-content: space-around;
+                    display: flex;
+                    justify-content: space-around;
                 }
             }
         }
     }
+    #On_Progress{
+        .progress{
+            .progress_icone{
+                grid-column: 1/4;
+                h3{
+                    font-size: 1rem;
+                }
+                .ship_icone{
+                    font-size: 1.2rem;
+                }
+            }
+            .timeLine{
+                li{
+                    width: 22%;
+                    span{
+                        font-size: 0.8rem;
+                    }
+                } 
+            } 
+        }
+    }
+    
 }
 
+@media (max-width: 1400px) {
+    .progress{
+        .progress_icone{
+            grid-column: 1/4;
+            h3{
+                font-size: 1rem;
+            }
+            .ship_icone{
+                font-size: 1.2rem;
+            }
+        }
+        .timeLine{
+            li{
+                width: 22%;
+                span{
+                    font-size: 0.8rem;
+                }
+            } 
+        } 
+    }
+}

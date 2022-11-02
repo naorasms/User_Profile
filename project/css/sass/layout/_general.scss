@@ -38,21 +38,21 @@ body{
 
 // /* X-Large Screen */
 
-// @media (min-width: 1400px) {
-//     .container {
-//         width: 1295px;
-//     }
-// }
+@media (min-width: 1400px) {
+    .container {
+        width: 1295px;
+    }
+}
 
 
 
 /* Large Screen */
 
-// @media (min-width: 1200px) {
-//     .container {
-//         width: 1170px;
-//     }
-// }
+ @media (max-width: 1200px) {
+     .container {
+       width: 1170px;
+   }
+}
 
 
 /* Medium Screen */
