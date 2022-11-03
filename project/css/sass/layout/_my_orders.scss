@@ -531,11 +531,217 @@
 }
 
 
-@media (max-width: 576px) {  
-    .container {
-        width: 480px;
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    .progress{
+        .progress_icone{
+            grid-column: 1/4;
+            h3{
+                font-size: 1rem;
+            }
+            .ship_icone{
+                font-size: 1.2rem;
+            }
+        }
+        .timeLine{
+            li{
+                width: 22%;
+                span{
+                    font-size: 0.8rem;
+                }
+            } 
+        } 
     }
 }
+
+
+
+/* Large Screen */
+
+@media (max-width: 1200px) {
+
+    .orders{
+        h3{
+            font-size: 1rem;
+        }
+        .order_nav{                                                                                                                                 
+            nav{
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+        
+        #On_Progress{
+            .progress{
+                .progress_icone{
+                    grid-column: 1/4;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .ship_icone{
+                        font-size: 1.2rem;
+                    }
+                }
+                .timeLine{
+                    li{
+                        width: 22%;
+                        span{
+                            font-size: 0.8rem;
+                        }
+                    } 
+                } 
+            }
+        }
+        #Delivered_orders {
+            .progress{
+            
+                .timeLine{
+                    // width: 98%;
+                    li{
+                        width: 22%;
+                    }
+                    .line{
+                        width: 78%;
+                        left: 11%;
+                        top: 4px;
+                    }
+
+                } 
+            }
+        }
+        #Returned_orders{
+            .progress_icone{
+                grid-column: 1/ 4;
+                img{
+                    width: 23px;
+                }
+                h3{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 992px) {
+    .orders{
+        .order_head{
+            input{
+                &::placeholder{
+                    font-size: 1rem;
+                }
+            }
+            h3{
+                font-size: 1rem;
+            }
+        }
+        .order_nav{
+            nav{
+                ul{
+                   display: flex;
+                   justify-content: space-around;
+                }
+            }
+        }
+        .order_product{
+            .product_head {
+                padding-block: .4rem;
+                .product_info {
+                    p{
+                        font-size: 0.8rem;
+                    }
+                    span{
+                        font-size: 0.78em;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .product_body{
+                padding-block: 0;
+                .product_img{
+                    width: 100px;
+                    height: 110px;
+                    a{
+                        font-size: 0.7rem;             
+                        padding: 0.3rem 0.2rem;
+                    }
+                } 
+            }
+        }
+        #On_Progress{
+            .progress{
+                .progress_icone{
+                    grid-column: 1/4;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .ship_icone{
+                        font-size: 1.2rem;
+                    }
+                }
+                .timeLine{
+                    li{
+                        width: 23%;
+                        span{
+                            font-size: 0.7rem;
+                        }
+                    } 
+                } 
+            }
+        }
+        #Delivered_orders {
+            .progress{
+                .progress_icone{
+                    grid-column: 1/4;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .ship_icone{
+                        font-size: 1.2rem;
+                    }
+                }
+                .timeLine{
+                    width: 98%;
+                    li{
+                        width: 22%;
+                        span{
+                            font-size: 0.7rem;
+                        }
+                    }
+                    .line{
+                        width: 78%;
+                        left: 11%;
+                    }
+
+                } 
+            }
+        }
+        #Returned_orders{
+            .progress_icone{
+                grid-column:1/ 4;
+                img{
+                    width: 23px;
+                }
+                h3{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
 
 @media (max-width: 768px){
     .orders{
@@ -629,159 +835,23 @@
                     } 
                 } 
             }
-        } 
-    }
-}
-
-
-@media (max-width: 992px) {
-    .orders{
-        .order_head{
-            input{
-                &::placeholder{
-                    font-size: 1rem;
-                }
-            }
-            h3{
-                font-size: 1rem;
-            }
         }
-        .order_nav{
-            nav{
-                ul{
-                   display: flex;
-                   justify-content: space-around;
-                }
-            }
-        }
-        .order_product{
-            .product_head {
-                padding-block: .4rem;
-                .product_info {
-                    p{
-                        font-size: 0.8rem;
-                    }
-                    span{
-                        font-size: 0.78em;
-                        font-weight: 600;
-                    }
-                }
-            }
-            .product_body{
-                padding-block: 0;
-                .product_img{
-                    width: 100px;
-                    height: 110px;
-                    a{
-                        font-size: 0.7rem;             
-                        padding: 0.3rem 0.2rem;
-                    }
-                } 
-            }
-        }
-        #On_Progress{
-            .progress{
-                .progress_icone{
-                    grid-column: 1/4;
-                    h3{
-                        font-size: 1rem;
-                    }
-                    .ship_icone{
-                        font-size: 1.2rem;
-                    }
-                }
-                .timeLine{
-                    li{
-                        width: 23%;
-                        span{
-                            font-size: 0.7rem;
-                        }
-                    } 
-                } 
-            }
-        }
-        #Delivered_orders {
-            .progress{
-                .progress_icone{
-                    grid-column: 1/4;
-                    h3{
-                        font-size: 1rem;
-                    }
-                    .ship_icone{
-                        font-size: 1.2rem;
-                    }
-                }
-                .timeLine{
-                    li{
-                        width: 23%;
-                        span{
-                            font-size: 0.7rem;
-                        }
-                    } 
-                } 
-            }
-        }
-    }
-}
-
-
-
-/* Large Screen */
-
-@media (max-width: 1200px) {
-
-    .orders{
-        .order_nav{
-            nav{
-                ul{
-                    display: flex;
-                    justify-content: space-around;
-                }
-            }
-        }
-    }
-    #On_Progress{
-        .progress{
+        #Returned_orders{
             .progress_icone{
-                grid-column: 1/4;
+                grid-column:1/ 4;
+                img{
+                    width: 23px;
+                }
                 h3{
                     font-size: 1rem;
                 }
-                .ship_icone{
-                    font-size: 1.2rem;
-                }
             }
-            .timeLine{
-                li{
-                    width: 22%;
-                    span{
-                        font-size: 0.8rem;
-                    }
-                } 
-            } 
         }
-    }
-    
+    } 
 }
 
-@media (max-width: 1400px) {
-    .progress{
-        .progress_icone{
-            grid-column: 1/4;
-            h3{
-                font-size: 1rem;
-            }
-            .ship_icone{
-                font-size: 1.2rem;
-            }
-        }
-        .timeLine{
-            li{
-                width: 22%;
-                span{
-                    font-size: 0.8rem;
-                }
-            } 
-        } 
+@media (max-width: 576px) {  
+    .container {
+        width: 480px;
     }
 }

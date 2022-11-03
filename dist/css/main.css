@@ -7544,9 +7544,160 @@ body {
   grid-column: 2;
 }
 
-@media (max-width: 576px) {
-  .container {
-    width: 480px;
+@media (max-width: 1400px) {
+  .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .progress .timeLine li {
+    width: 22%;
+  }
+  .progress .timeLine li span {
+    font-size: 0.8rem;
+  }
+}
+/* Large Screen */
+@media (max-width: 1200px) {
+  .orders h3 {
+    font-size: 1rem;
+  }
+  .orders .order_nav nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .orders #On_Progress .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #On_Progress .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .orders #On_Progress .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .orders #On_Progress .progress .timeLine li {
+    width: 22%;
+  }
+  .orders #On_Progress .progress .timeLine li span {
+    font-size: 0.8rem;
+  }
+  .orders #Delivered_orders .progress .timeLine li {
+    width: 22%;
+  }
+  .orders #Delivered_orders .progress .timeLine .line {
+    width: 78%;
+    left: 11%;
+    top: 4px;
+  }
+  .orders #Returned_orders .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #Returned_orders .progress_icone img {
+    width: 23px;
+  }
+  .orders #Returned_orders .progress_icone h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .orders .order_head input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .orders .order_head input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .orders .order_head input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .orders .order_head input::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .orders .order_head input::placeholder {
+    font-size: 1rem;
+  }
+  .orders .order_head h3 {
+    font-size: 1rem;
+  }
+  .orders .order_nav nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .orders .order_product .product_head {
+    padding-block: 0.4rem;
+  }
+  .orders .order_product .product_head .product_info p {
+    font-size: 0.8rem;
+  }
+  .orders .order_product .product_head .product_info span {
+    font-size: 0.78em;
+    font-weight: 600;
+  }
+  .orders .order_product .product_body {
+    padding-block: 0;
+  }
+  .orders .order_product .product_body .product_img {
+    width: 100px;
+    height: 110px;
+  }
+  .orders .order_product .product_body .product_img a {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.2rem;
+  }
+  .orders #On_Progress .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #On_Progress .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .orders #On_Progress .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .orders #On_Progress .progress .timeLine li {
+    width: 23%;
+  }
+  .orders #On_Progress .progress .timeLine li span {
+    font-size: 0.7rem;
+  }
+  .orders #Delivered_orders .progress .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #Delivered_orders .progress .progress_icone h3 {
+    font-size: 1rem;
+  }
+  .orders #Delivered_orders .progress .progress_icone .ship_icone {
+    font-size: 1.2rem;
+  }
+  .orders #Delivered_orders .progress .timeLine {
+    width: 98%;
+  }
+  .orders #Delivered_orders .progress .timeLine li {
+    width: 22%;
+  }
+  .orders #Delivered_orders .progress .timeLine li span {
+    font-size: 0.7rem;
+  }
+  .orders #Delivered_orders .progress .timeLine .line {
+    width: 78%;
+    left: 11%;
+  }
+  .orders #Returned_orders .progress_icone {
+    grid-column: 1/4;
+  }
+  .orders #Returned_orders .progress_icone img {
+    width: 23px;
+  }
+  .orders #Returned_orders .progress_icone h3 {
+    font-size: 1rem;
   }
 }
 @media (max-width: 768px) {
@@ -7636,125 +7787,19 @@ body {
   .orders #On_Progress .progress .timeLine li span {
     font-size: 0.7rem;
   }
-}
-@media (max-width: 992px) {
-  .orders .order_head input::-webkit-input-placeholder {
-    font-size: 1rem;
-  }
-  .orders .order_head input::-moz-placeholder {
-    font-size: 1rem;
-  }
-  .orders .order_head input:-ms-input-placeholder {
-    font-size: 1rem;
-  }
-  .orders .order_head input::-ms-input-placeholder {
-    font-size: 1rem;
-  }
-  .orders .order_head input::placeholder {
-    font-size: 1rem;
-  }
-  .orders .order_head h3 {
-    font-size: 1rem;
-  }
-  .orders .order_nav nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .orders .order_product .product_head {
-    padding-block: 0.4rem;
-  }
-  .orders .order_product .product_head .product_info p {
-    font-size: 0.8rem;
-  }
-  .orders .order_product .product_head .product_info span {
-    font-size: 0.78em;
-    font-weight: 600;
-  }
-  .orders .order_product .product_body {
-    padding-block: 0;
-  }
-  .orders .order_product .product_body .product_img {
-    width: 100px;
-    height: 110px;
-  }
-  .orders .order_product .product_body .product_img a {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.2rem;
-  }
-  .orders #On_Progress .progress .progress_icone {
+  .orders #Returned_orders .progress_icone {
     grid-column: 1/4;
   }
-  .orders #On_Progress .progress .progress_icone h3 {
+  .orders #Returned_orders .progress_icone img {
+    width: 23px;
+  }
+  .orders #Returned_orders .progress_icone h3 {
     font-size: 1rem;
-  }
-  .orders #On_Progress .progress .progress_icone .ship_icone {
-    font-size: 1.2rem;
-  }
-  .orders #On_Progress .progress .timeLine li {
-    width: 23%;
-  }
-  .orders #On_Progress .progress .timeLine li span {
-    font-size: 0.7rem;
-  }
-  .orders #Delivered_orders .progress .progress_icone {
-    grid-column: 1/4;
-  }
-  .orders #Delivered_orders .progress .progress_icone h3 {
-    font-size: 1rem;
-  }
-  .orders #Delivered_orders .progress .progress_icone .ship_icone {
-    font-size: 1.2rem;
-  }
-  .orders #Delivered_orders .progress .timeLine li {
-    width: 23%;
-  }
-  .orders #Delivered_orders .progress .timeLine li span {
-    font-size: 0.7rem;
   }
 }
-/* Large Screen */
-@media (max-width: 1200px) {
-  .orders .order_nav nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #On_Progress .progress .progress_icone {
-    grid-column: 1/4;
-  }
-  #On_Progress .progress .progress_icone h3 {
-    font-size: 1rem;
-  }
-  #On_Progress .progress .progress_icone .ship_icone {
-    font-size: 1.2rem;
-  }
-  #On_Progress .progress .timeLine li {
-    width: 22%;
-  }
-  #On_Progress .progress .timeLine li span {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 1400px) {
-  .progress .progress_icone {
-    grid-column: 1/4;
-  }
-  .progress .progress_icone h3 {
-    font-size: 1rem;
-  }
-  .progress .progress_icone .ship_icone {
-    font-size: 1.2rem;
-  }
-  .progress .timeLine li {
-    width: 22%;
-  }
-  .progress .timeLine li span {
-    font-size: 0.8rem;
+@media (max-width: 576px) {
+  .container {
+    width: 480px;
   }
 }
 .more_about_order {
