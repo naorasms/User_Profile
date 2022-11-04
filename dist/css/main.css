@@ -6507,6 +6507,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6752,84 +6753,100 @@ body {
 }
 @media (max-width: 575.98px) {
   .sidebar {
-    width: 64px;
-    left: -64px;
+    width: 0px;
+    left: -240px;
     -webkit-transition: ease-in-out 0.3s;
     transition: ease-in-out 0.3s;
-    position: fixed;
+    position: absolute;
+    z-index: 1000;
   }
   .sidebar.active {
     position: absolute;
-    width: 60px;
+    width: 240px;
     left: 0px;
+    z-index: 9999;
   }
   .sidebar .menu_mobile {
     position: absolute;
-    left: 75px;
+    left: 255px;
     top: 10px;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 5px;
   }
   .sidebar .menu_mobile .menu {
     font-size: 1.2rem;
     color: #40687E;
+    position: absolute;
   }
   .sidebar .sidebar_header {
     padding-left: 0.1rem;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.5rem;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .sidebar .sidebar_header img {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
+    margin-left: 1rem;
+  }
+  .sidebar .sidebar_header .profile_info {
+    -ms-flex-item-align: end;
+        align-self: end;
     margin-left: 0.5rem;
   }
-  .sidebar .sidebar_header .profile_info .menu_mobile {
-    display: block;
-    position: absolute;
-    right: -50px;
-    top: -38px;
-    z-index: 1;
-  }
   .sidebar .sidebar_header .profile_info .name {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     letter-spacing: 0px;
     font-weight: 600;
   }
   .sidebar .sidebar_header .profile_info .email {
-    display: none;
+    font-size: 0.7rem;
+  }
+  .sidebar .sidebar_header .profile_info .email::after {
+    content: "";
+    position: absolute;
   }
   .sidebar .sidebar_header .profile_info .noti_icon {
     position: absolute;
-    top: -45px;
-    right: 0;
-    font-size: 0.7rem;
-    display: none;
+    top: -12px;
+    right: 0px;
   }
   .sidebar .sidebar_body li {
-    width: 100%;
+    width: 80%;
+    line-height: 1.5;
   }
   .sidebar .sidebar_body li a {
-    width: 2rem;
     padding-inline: 0.5rem;
     margin-left: 13px;
   }
   .sidebar .sidebar_body li a .menu_icon {
     font-size: 1.1rem;
   }
-  .sidebar .sidebar_body span {
-    display: none;
-  }
-  .sidebar .sidebar_footer {
-    margin-top: unset;
+  .sidebar .sidebar_body li a span {
+    font-size: 1rem;
   }
   .sidebar .sidebar_footer button {
-    width: 100%;
-  }
-  .sidebar .sidebar_footer button a {
-    width: 2rem;
-  }
-  .sidebar .sidebar_footer button span {
-    display: none;
+    width: 80%;
   }
 }
 .edit_user {
@@ -6924,9 +6941,6 @@ body {
 .edit_user .form_body form .form_field label[for=f],
 .edit_user .form_body form .form_field label[for=m] {
   display: unset;
-}
-.edit_user .form_body form .form_field input#phone {
-  width: 66%;
 }
 .edit_user .form_body form .form_field input:not([type=radio]) {
   padding-bottom: 0.5rem;
@@ -7329,7 +7343,7 @@ body {
   border-radius: 50%;
   left: 45%;
   display: block;
-  z-index: 11111;
+  z-index: 1;
   background-color: #40687E;
 }
 .orders #On_Progress .timeLine li {
@@ -7337,7 +7351,7 @@ body {
   text-align: center;
   position: relative;
   font-size: 0.9rem;
-  z-index: 2;
+  z-index: 999;
   color: #40687E;
 }
 .orders #On_Progress .timeLine li span {
@@ -7798,8 +7812,34 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .container {
-    width: 480px;
+  .orders .order_head {
+    margin-block: 2rem;
+  }
+  .orders .order_head h3 {
+    font-size: 0.8rem;
+    grid-column: span 3;
+    align-self: center;
+  }
+  .orders .order_head form .search-name-order {
+    grid-column: 2/-1;
+  }
+  .orders .order_head form .order-date {
+    display: none;
+  }
+  .orders #On_Progress .progress .progress_icone {
+    display: none;
+  }
+  .orders #On_Progress .progress .timeLine {
+    grid-column: 1/-1;
+  }
+  .orders #Delivered_orders .progress .progress_icone {
+    display: none;
+  }
+  .orders #Delivered_orders .progress .timeLine {
+    grid-column: 1/-1;
+  }
+  .orders #Returned_orders .progress_icone {
+    grid-column: 1/8;
   }
 }
 .more_about_order {

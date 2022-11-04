@@ -250,14 +250,10 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            // top: 0;
             left: 45%;
-            // left: 0;
             display: block;
-
-            z-index: 11111;
+            z-index: 1;
             background-color: #40687E;;
-            // margin: auto;
         }
       
         .timeLine li{
@@ -266,7 +262,7 @@
             text-align: center;
             position: relative;
             font-size: .9rem;
-            z-index: 2;
+            z-index: 999;
             color: #40687E;
             
         }
@@ -851,7 +847,48 @@
 }
 
 @media (max-width: 576px) {  
-    .container {
-        width: 480px;
+    .orders{
+        .order_head{
+            margin-block: 2rem;
+            h3{
+                font-size: 0.8rem;
+                grid-column: span 3;
+                align-self: center;
+                
+            }
+            form{
+                .search-name-order{
+                    grid-column: 2/ -1;
+                }
+                .order-date{
+                    display: none;
+                }
+            }
+        }
+        #On_Progress{
+            .progress{
+                .progress_icone{
+                    display: none;
+                }
+                .timeLine{
+                    grid-column: 1/-1;
+                }
+            }
+        }
+        #Delivered_orders{
+            .progress{
+                .progress_icone{
+                    display: none;
+                }
+                .timeLine{
+                    grid-column: 1/-1;
+                }
+            }
+        }
+        #Returned_orders{
+            .progress_icone{
+                grid-column: 1/8;
+            }
+        }
     }
 }
