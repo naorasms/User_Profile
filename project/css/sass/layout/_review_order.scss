@@ -165,3 +165,16 @@
         pointer-events:all;
     }
 }
+
+
+@media (max-width: 576px) { 
+    .review_popup {
+        height: 500px;
+        .your_comment{
+            .feild_submit{
+                margin-top: 1rem;
+            }
+        }
+    }
+     
+ }

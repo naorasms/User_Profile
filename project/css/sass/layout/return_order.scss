@@ -37,7 +37,8 @@
     .return_product{
         padding: 1rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
         .reason_of_return {
             h3{
                 font-size: .98rem;
@@ -49,7 +50,7 @@
                 background: rgba(247, 246, 246, 0.5);
                 border: 1px solid #D6D6D6;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                width: 19rem;
+                width: 100%;
                 padding: 0.5rem;
                 font-size: .95rem;
                 color: #C1C1C1;
@@ -65,7 +66,7 @@
             }
         }
         .return{
-            width: 150px;
+            width: 26%;
             // height: 213.18px;
             background: #FCFCFC;
             box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
@@ -121,3 +122,60 @@
         pointer-events:all;
     }
 }
+
+
+
+
+
+@media (max-width: 768px){
+    .return_popup{
+        width: 470px;
+        .return_product{
+            justify-content: space-between;
+            .return{
+                margin-top: 1rem;
+                width: 150px;
+            }
+            .reason_of_return{
+                h3{
+                    font-size: .8rem;
+                }
+            }
+        }
+        .send{
+            padding-top: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .return_popup{
+        height: 444px;
+        // left: 60%;
+        .return_head {
+            padding: .8rem 1.9rem;
+        }
+            
+        .return_product{
+            // justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .return{
+                margin-top: 1rem;
+                width: 150px;
+                height: 180px;
+            }
+            .reason_of_return{
+                h3{
+                    font-size: .8rem;
+                }
+            }
+        }
+        .send{
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+        }
+    }
+    
+ }
