@@ -12,8 +12,6 @@
         }
         form{
             grid-column: 5/-1;
-            // display: flex;
-            // justify-content: space-between;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             position: relative;
@@ -58,10 +56,6 @@
                     font-weight: 600;
                     color: #C1C1C1;
                 }
-            }
-            input:first-child{
-                // width: 100%;
-                
             }
             img{
                 position: absolute;
@@ -113,11 +107,9 @@
             }
         }
     }
-    // #all_orders{
         .order_product{
             margin-top: 1rem;
             border: 1px solid #B0B5B8;
-            // padding-bottom: 1.5rem;
             .product_head{
                 display: flex;
                 justify-content: space-around;
@@ -127,10 +119,6 @@
                 padding-block: .5rem;
                 border: 1px solid #B0B5B8;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-                // .product_info:first-child{
-                //     grid-column:  2 / span 2;
-                // }
                 .product_info{
                     grid-column: span 2;
                     p{
@@ -152,16 +140,17 @@
                 position: relative;
                 .splide{
                     grid-column: span 12;
+                    
+                }
+                .splide__list{
+                    margin-left: 10px;
                 }
 
-                    // margin-inline: 0;
-                        .product_img:first-child{
-                            // grid-column: 2 ;
-                        }
+                   
                         .product_img{
                             margin-block: 1rem;
-                            // margin-right: 1rem;
-                            // margin-left: 1rem;
+                            margin-left: 1rem;
+                        
                             grid-column: span 1 ;
                             width: 100px;
                             height: 120px;
@@ -198,45 +187,14 @@
                                     color: #fff;
                                 }
                             }
-                            // &.swiper-slide {
-                            //     width: 100px;
-                            // }
             
                         }
                     }
-
-                
-            //     // &.swiper{
-            //     //     width: 1023px;
-            //     //     // height: auto;
-            //     //     // overflow: hidden;
-            //     //     .swiper-button-next{
-            //     //         // color:#63889D
-            //     //         position: absolute;
-            //     //         font-size: 2rem;
-            //     //         right: 0;
-            //     //         color: #fff;
-            //     //         background-color:#63889D; 
-            //     //         top: 50px;
-            //     //         cursor: pointer;
-            //     //     }
-            //     //     .swiper-button-prev{
-            //     //         color: #40687e;
-            //     //         font-size: 2rem;
-            //     //         position: absolute;
-            //     //         top: 50px;
-            //     //         color: #fff;
-            //     //         background-color:#63889D; 
-            //     //         cursor: pointer;
-            //     //     }
-            //     // }
-            // }
-            
            
             
         }
         
-    // }
+
  
     [data-tab-content]{
         display: none;
@@ -249,7 +207,7 @@
             grid-column: 2/ -1;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            // padding-top: 2rem;
+
             align-items: center;
             padding-block: 2rem;
             
@@ -273,17 +231,11 @@
             position: relative;
             width: 90%;
             margin: auto;
-            // height: 100px;
-            // margin-top: 60px;
         }
         .timeLine ul{
             display: flex;
             justify-content: space-between;
             position: relative;
-
-
-            // padding-top: 15px;
-            // margin-top: -40px;
         }
         .timeLine li:before{
             content: "";
@@ -298,7 +250,6 @@
         }
       
         .timeLine li{
-            // float: left;
             width: 20%;
             text-align: center;
             position: relative;
@@ -329,7 +280,6 @@
             top: 4px;
             border-radius: 50px;
             height: 2px;
-            // z-index: 1;
             background: #C1C1C1
             
         }
@@ -354,14 +304,12 @@
             grid-column: 2/ -1;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            // padding-top: 2rem;
             align-items: center;
             padding-block: 2rem;
             
         }
         .progress_icone{
             grid-column: 1/ 4;
-            // justify-self: end;
             .ship_icone{
                 color: #40687E;
                 font-size: 1.5rem;
@@ -378,17 +326,11 @@
             position: relative;
             width: 90%;
             margin: auto;
-            // height: 100px;
-            // margin-top: 60px;
         }
         .timeLine ul{
             display: flex;
             justify-content: space-between;
             position: relative;
-
-
-            // padding-top: 15px;
-            // margin-top: -40px;
         }
         .timeLine li:before{
             content: "";
@@ -396,18 +338,14 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            // top: 0;
             left: 45%;
-            // left: 0;
             display: block;
 
             z-index: 11111;
             background-color: #40687E;;
-            // margin: auto;
         }
       
         .timeLine li{
-            // float: left;
             width: 21%;
             text-align: center;
             position: relative;
@@ -423,13 +361,6 @@
             font-weight: 500;
             
         }
-        // .timeLine li:last-child span{
-        //     color: #C1C1C1;
-        // }
-        // .timeLine li:last-child::before{
-        //     background-color: #C1C1C1;
-        // }
-
         .timeLine .line{
             width: 80%;
             position: absolute;
@@ -438,7 +369,6 @@
             top: 3px;
             border-radius: 50px;
             height: 2px;
-            // z-index: 1;
             background: #C1C1C1
             
         }
@@ -459,14 +389,12 @@
             grid-column: 2/ -1;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            // padding-top: 2rem;
             align-items: center;
             padding-block: 2rem;
             
         }
         .progress_icone{
-            grid-column: 2 / 4;
-            // justify-self: end;
+            grid-column: 1 / 4;
             img{
                 width: 25px;
                 vertical-align: bottom;
@@ -493,17 +421,11 @@
             position: relative;
             width: 90%;
             margin: auto;
-            // height: 100px;
-            // margin-top: 60px;
         }
         .timeLine ul{
             display: flex;
             justify-content: space-between;
             position: relative;
-
-
-            // padding-top: 15px;
-            // margin-top: -40px;
         }
         .timeLine li:before{
             content: "";
@@ -511,18 +433,14 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            // top: 0;
             left: 45%;
-            // left: 0;
             display: block;
 
             z-index: 11111;
             background-color: #40687E;;
-            // margin: auto;
         }
       
         .timeLine li{
-            // float: left;
             width: 20%;
             text-align: center;
             position: relative;
@@ -538,12 +456,6 @@
             font-weight: 500;
             
         }
-        // .timeLine li:last-child span{
-        //     color: #C1C1C1;
-        // }
-        // .timeLine li:last-child::before{
-        //     background-color: #C1C1C1;
-        // }
 
         .timeLine .line{
             width: 80%;
@@ -553,7 +465,6 @@
             top: 3px;
             border-radius: 50px;
             height: 2px;
-            // z-index: 1;
             background: #C1C1C1
             
         }
@@ -645,7 +556,6 @@
             .progress{
             
                 .timeLine{
-                    // width: 98%;
                     li{
                         width: 22%;
                     }
@@ -849,6 +759,7 @@
                 .product_img{
                     width: 90px;
                     height: 110px;
+                    margin-left: 0.5rem;
                     a{
                         font-size: 0.6rem;
                     }
@@ -911,6 +822,13 @@
                 }
             }
         }
+        .order_product{
+            .product_body{
+                .product_img{
+                    margin-left: 1.2rem;
+                }
+            }
+        }  
         #On_Progress{
             
             .progress{

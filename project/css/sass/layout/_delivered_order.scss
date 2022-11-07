@@ -35,7 +35,6 @@
     }
     
     a{
-        // margin: auto;
         grid-column: 5;
         background: rgba(64, 104, 126, 0.12);
         border: 1px solid #A2BBC9;
@@ -48,7 +47,6 @@
     }
 }
 #Delivered_orders .order_product.price{
-    // padding-bottom: 2rem;
     border:none
 }
 #Delivered_orders  .about_more{
@@ -99,8 +97,6 @@
     gap: 1rem;
     .shipping_detail{
         background-color: #fff;
-        // height: 224px;
-        // width: 80%;
         border-radius: 18px;
         text-align: left;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -134,13 +130,10 @@
     }
     .payment{
         background-color: #fff;
-        // height: 224px;
-        // width: 80%;
         border-radius: 18px;
         text-align: left;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding-inline: 1rem;
-        // padding-bottom: 3rem;
         h3{
             color: #40687E;
             text-align: center;
@@ -154,7 +147,6 @@
             padding: .5rem 0 1rem 0;
         }
         h5{
-            // font-size: 1rem;
             color: #40687E;
             font-weight: 600;
         }
