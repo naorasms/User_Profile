@@ -7477,7 +7477,7 @@ body {
   position: absolute;
   margin: auto;
   left: 10%;
-  top: 3px;
+  top: 4px;
   border-radius: 50px;
   height: 2px;
   background: #C1C1C1;
@@ -7866,7 +7866,7 @@ body {
     grid-column: 1/-1;
   }
   .orders #On_Progress .about_more {
-    width: 100%;
+    width: 95%;
   }
   .orders #Delivered_orders .progress .progress_icone {
     display: none;
@@ -8063,6 +8063,11 @@ body {
   font-weight: 400;
 }
 
+@media (max-width: 576px) {
+  .container_about a {
+    grid-column: span 7;
+  }
+}
 .more_about_order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8275,6 +8280,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .more_about_order .go_back a {
+    margin-right: unset;
+  }
   #Delivered_orders .about_more {
     width: 95%;
   }
@@ -8641,6 +8649,7 @@ body {
   .return_popup {
     height: 444px;
     top: 55%;
+    left: 50%;
   }
   .return_popup .return_head {
     padding: 0.8rem 1.9rem;
@@ -8827,6 +8836,7 @@ body {
   .return_popup {
     height: 444px;
     top: 55%;
+    left: 50%;
   }
   .return_popup .return_head {
     padding: 0.8rem 1.9rem;

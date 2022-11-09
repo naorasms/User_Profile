@@ -187,6 +187,13 @@
 
 
 @media (max-width: 576px) { 
+    .more_about_order{
+        .go_back{
+            a{
+                margin-right: unset;
+            }
+        }     
+    }
     #Delivered_orders{
         .about_more{
             width: 95%;

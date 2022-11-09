@@ -26,15 +26,15 @@
                 select(name="") 0
                     option(value="") day
                     each d in ["Sunday","Monday" ,"Tuesday" ,"Wednesday" , "Thursday","Friday" , "Saturday"]
-                        option(value="")= d
+                        option(value= d)= d
                 select(name="")
                     option(value="") month
                     each i in ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-                        option(value="")= i
+                        option(value=i)= i
                 select(name="")
                     option(value="") year
                     - for (var i = 1930; i <= 2005; i++ )
-                        option(value="") #{i}  
+                        option(value=i) #{i}  
             .form_field.left
                 label(for="Gender") Gender
                 .gender_detils
